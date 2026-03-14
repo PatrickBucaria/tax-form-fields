@@ -6,8 +6,9 @@ Fills each mapped field with a labeled test value, converts to PNG via pdftoppm,
 and outputs the image path for visual inspection (e.g., by Claude Code).
 
 Usage:
-  python3 visual_verify.py f1040sb    # generate PNGs for one form
-  python3 visual_verify.py            # list available forms
+  python3 visual_verify.py f1040sb       # generate PNGs for one form
+  python3 visual_verify.py 2025/ny       # generate PNGs for all 2025 NY forms
+  python3 visual_verify.py               # list available forms
 
 Requires: pypdf, pdftoppm (poppler)
 """
@@ -17,27 +18,46 @@ import os
 import re
 import subprocess
 import sys
-import tempfile
+import glob
 
 from pypdf import PdfReader, PdfWriter
 
-FORMS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "forms")
-MAPPINGS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "field_mappings")
-OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output", "visual_verify")
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(ROOT_DIR, "output", "visual_verify")
+
+
+def discover_mappings(filter_arg=None):
+    """Find all mapping files under {year}/{jurisdiction}/mappings/."""
+    results = []
+    pattern = os.path.join(ROOT_DIR, "*", "*", "mappings", "*.json")
+
+    for mapping_path in sorted(glob.glob(pattern)):
+        parts = os.path.relpath(mapping_path, ROOT_DIR).split(os.sep)
+        year, jurisdiction = parts[0], parts[1]
+        form_name = os.path.splitext(parts[3])[0]
+        forms_dir = os.path.join(ROOT_DIR, year, jurisdiction, "forms")
+        label = f"{year}/{jurisdiction}/{form_name}"
+
+        if filter_arg:
+            if (filter_arg == year or
+                filter_arg == f"{year}/{jurisdiction}" or
+                filter_arg in form_name):
+                results.append((mapping_path, forms_dir, label))
+        else:
+            results.append((mapping_path, forms_dir, label))
+
+    return results
 
 
 def make_label(description, max_len=25):
     """Create a short label from a field description for visual identification."""
-    # Extract line number if present (e.g., "Line 1a - Wages..." -> "L1a Wages")
-    m = re.match(r"Line\s+(\S+)\s*[-–—]\s*(.*)", description)
+    m = re.match(r"Line\s+(\S+)\s*[-\u2013\u2014]\s*(.*)", description)
     if m:
         label = f"L{m.group(1)} {m.group(2)}"
     else:
         label = description
 
-    # Remove parenthetical hints like "(checkbox /1)"
     label = re.sub(r"\s*\(.*?\)\s*", " ", label).strip()
-
     return label[:max_len]
 
 
@@ -46,10 +66,10 @@ def get_checkbox_value(description):
     m = re.search(r"\(checkbox\s+(/\w+)\)", description)
     if m:
         return m.group(1)
-    return "/1"  # default
+    return "/1"
 
 
-def fill_form_for_visual(mapping_path):
+def fill_form_for_visual(mapping_path, forms_dir):
     """Fill a form with labeled test values and return the output PDF path."""
     with open(mapping_path) as f:
         mapping = json.load(f)
@@ -61,10 +81,9 @@ def fill_form_for_visual(mapping_path):
     if not pdf_name or not fields:
         return None, form_name
 
-    pdf_path = os.path.join(FORMS_DIR, pdf_name)
+    pdf_path = os.path.join(forms_dir, pdf_name)
     if not os.path.exists(pdf_path):
         print(f"  PDF not found: {pdf_path}")
-        print(f"  Run: python3 verify_mappings.py --download")
         return None, form_name
 
     reader = PdfReader(pdf_path)
@@ -72,7 +91,6 @@ def fill_form_for_visual(mapping_path):
     writer.append(reader)
 
     pdf_fields = reader.get_fields() or {}
-
     filled_fields = []
 
     for field_name, desc in fields.items():
@@ -82,7 +100,6 @@ def fill_form_for_visual(mapping_path):
         ft = pdf_fields[field_name].get("/FT", "")
 
         if ft == "/Btn":
-            # Checkbox — check it with the documented value
             value = get_checkbox_value(desc)
             label = make_label(desc)
             for page_num in range(len(reader.pages)):
@@ -96,7 +113,6 @@ def fill_form_for_visual(mapping_path):
                     pass
             filled_fields.append(f"  CHECK  {field_name} = {value}  ({label})")
         else:
-            # Text field — fill with short label
             label = make_label(desc)
             for page_num in range(len(reader.pages)):
                 try:
@@ -109,7 +125,6 @@ def fill_form_for_visual(mapping_path):
                     pass
             filled_fields.append(f"  TEXT   {field_name} = \"{label}\"")
 
-    # Save filled PDF
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     base = os.path.splitext(pdf_name)[0]
     out_pdf = os.path.join(OUTPUT_DIR, f"{base}_visual.pdf")
@@ -127,7 +142,6 @@ def pdf_to_png(pdf_path):
         check=True,
         capture_output=True,
     )
-    # pdftoppm outputs base-1.png, base-2.png, etc.
     pngs = sorted(
         f for f in os.listdir(os.path.dirname(base))
         if f.startswith(os.path.basename(base) + "-") and f.endswith(".png")
@@ -137,53 +151,41 @@ def pdf_to_png(pdf_path):
 
 def main():
     if len(sys.argv) < 2:
-        # List available forms
         print("Available forms:")
-        for f in sorted(os.listdir(MAPPINGS_DIR)):
-            if f.endswith(".json"):
-                print(f"  {os.path.splitext(f)[0]}")
+        for _, _, label in discover_mappings():
+            print(f"  {label}")
         print(f"\nUsage: python3 visual_verify.py <form_name>")
         print(f"Example: python3 visual_verify.py f1040sb")
+        print(f"Example: python3 visual_verify.py 2025/ny")
         return
 
-    form_filter = sys.argv[1]
+    filter_arg = sys.argv[1]
+    mappings = discover_mappings(filter_arg)
 
-    # Find matching mapping file
-    mapping_path = os.path.join(MAPPINGS_DIR, f"{form_filter}.json")
-    if not os.path.exists(mapping_path):
-        # Try partial match
-        matches = [
-            f for f in os.listdir(MAPPINGS_DIR)
-            if form_filter in f and f.endswith(".json")
-        ]
-        if len(matches) == 1:
-            mapping_path = os.path.join(MAPPINGS_DIR, matches[0])
-        elif matches:
-            print(f"Multiple matches: {matches}")
-            return
-        else:
-            print(f"No mapping found for '{form_filter}'")
-            return
-
-    print(f"Filling form with test values...")
-    result = fill_form_for_visual(mapping_path)
-    if result[0] is None:
-        print(f"Failed to fill {result[1]}")
+    if not mappings:
+        print(f"No mapping found for '{filter_arg}'")
         return
 
-    out_pdf, form_name, filled_fields = result
+    for mapping_path, forms_dir, label in mappings:
+        print(f"\nFilling {label} with test values...")
+        result = fill_form_for_visual(mapping_path, forms_dir)
+        if result[0] is None:
+            print(f"Failed to fill {result[1]}")
+            continue
 
-    print(f"\nForm: {form_name}")
-    print(f"Filled {len(filled_fields)} fields:")
-    for line in filled_fields:
-        print(line)
+        out_pdf, form_name, filled_fields = result
 
-    print(f"\nConverting to PNG...")
-    pngs = pdf_to_png(out_pdf)
+        print(f"Form: {form_name}")
+        print(f"Filled {len(filled_fields)} fields:")
+        for line in filled_fields:
+            print(line)
 
-    print(f"\nGenerated {len(pngs)} page(s):")
-    for png in pngs:
-        print(f"  {png}")
+        print(f"Converting to PNG...")
+        pngs = pdf_to_png(out_pdf)
+
+        print(f"Generated {len(pngs)} page(s):")
+        for png in pngs:
+            print(f"  {png}")
 
     print(f"\nReady for visual inspection.")
 

@@ -4,14 +4,14 @@ on:
   push:
     branches: [main]
     paths:
-      - 'field_mappings/**'
+      - '*/*/mappings/**'
+      - '*/*/forms/**'
       - 'verify_mappings.py'
-      - 'forms/**'
   pull_request:
     paths:
-      - 'field_mappings/**'
+      - '*/*/mappings/**'
+      - '*/*/forms/**'
       - 'verify_mappings.py'
-      - 'forms/**'
 
 jobs:
   verify:

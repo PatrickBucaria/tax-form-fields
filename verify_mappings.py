@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """
-verify_mappings.py - Verify field mappings against actual IRS PDFs
+verify_mappings.py - Verify field mappings against actual PDFs
 
-Downloads blank IRS forms from irs.gov (if not already cached in forms/),
-then for each mapping file in field_mappings/:
-  1. Checks every field name exists in the PDF
+For each mapping file found under {year}/{jurisdiction}/mappings/:
+  1. Checks every field name exists in the PDF (from sibling forms/ dir)
   2. Writes a test value, saves to a temp file, re-reads it, and verifies
      the round-trip succeeded
 
+Federal PDFs are auto-downloaded from irs.gov if missing. State PDFs must
+be manually placed in the forms/ directory.
+
 Usage:
-  python3 verify_mappings.py              # verify all mappings
-  python3 verify_mappings.py f1040        # verify one form
-  python3 verify_mappings.py --download   # download PDFs only, don't verify
+  python3 verify_mappings.py                    # verify all mappings
+  python3 verify_mappings.py f1040              # verify one form (any year/jurisdiction)
+  python3 verify_mappings.py 2025               # verify all 2025 mappings
+  python3 verify_mappings.py 2025/federal       # verify 2025 federal only
+  python3 verify_mappings.py 2025/ny            # verify 2025 NY only
+  python3 verify_mappings.py --download         # download federal PDFs only
 
 Requires: pip install pypdf
 """
@@ -24,20 +29,50 @@ import tempfile
 import urllib.request
 import urllib.error
 
-# PDF filenames map to IRS download paths. All are under https://www.irs.gov/pub/irs-pdf/
 IRS_PDF_BASE = "https://www.irs.gov/pub/irs-pdf/"
-
-FORMS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "forms")
-MAPPINGS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "field_mappings")
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-def download_pdf(pdf_name):
-    """Download a PDF from irs.gov if not already cached."""
-    pdf_path = os.path.join(FORMS_DIR, pdf_name)
+def discover_mappings(filter_arg=None):
+    """Find all mapping files under {year}/{jurisdiction}/mappings/.
+
+    Returns list of (mapping_path, forms_dir, label) tuples.
+    """
+    results = []
+    pattern = os.path.join(ROOT_DIR, "*", "*", "mappings", "*.json")
+
+    for mapping_path in sorted(glob.glob(pattern)):
+        # Extract year/jurisdiction from path
+        parts = os.path.relpath(mapping_path, ROOT_DIR).split(os.sep)
+        year, jurisdiction = parts[0], parts[1]
+        form_name = os.path.splitext(parts[3])[0]
+        forms_dir = os.path.join(ROOT_DIR, year, jurisdiction, "forms")
+        label = f"{year}/{jurisdiction}/{form_name}"
+
+        # Apply filter
+        if filter_arg:
+            if (filter_arg == year or
+                filter_arg == f"{year}/{jurisdiction}" or
+                filter_arg in form_name):
+                results.append((mapping_path, forms_dir, label, jurisdiction))
+        else:
+            results.append((mapping_path, forms_dir, label, jurisdiction))
+
+    return results
+
+
+def download_pdf(pdf_name, forms_dir, jurisdiction):
+    """Download a PDF if not already cached. Only federal forms auto-download."""
+    pdf_path = os.path.join(forms_dir, pdf_name)
     if os.path.exists(pdf_path):
         return pdf_path
 
-    os.makedirs(FORMS_DIR, exist_ok=True)
+    if jurisdiction != "federal":
+        print(f"  PDF not found: {pdf_path}")
+        print(f"  State PDFs must be manually placed in {forms_dir}/")
+        return None
+
+    os.makedirs(forms_dir, exist_ok=True)
     url = IRS_PDF_BASE + pdf_name
     print(f"  Downloading {url} ...")
     try:
@@ -94,7 +129,7 @@ def round_trip_test(pdf_path, field_name, test_value="TEST_123"):
         os.unlink(tmp_path)
 
 
-def verify_mapping(mapping_path):
+def verify_mapping(mapping_path, forms_dir, label, jurisdiction):
     """Verify a single mapping file against its PDF."""
     with open(mapping_path) as f:
         mapping = json.load(f)
@@ -112,11 +147,11 @@ def verify_mapping(mapping_path):
         return None
 
     print(f"\n{'='*60}")
-    print(f"{form_name}")
+    print(f"{label}  ({form_name})")
     print(f"{'='*60}")
 
     # Download PDF if needed
-    pdf_path = download_pdf(pdf_name)
+    pdf_path = download_pdf(pdf_name, forms_dir, jurisdiction)
     if not pdf_path:
         print(f"FAIL: Could not get {pdf_name}")
         return False
@@ -167,45 +202,42 @@ def verify_mapping(mapping_path):
 
 def main():
     # Parse args
-    filter_form = None
+    filter_arg = None
     download_only = False
 
     for arg in sys.argv[1:]:
         if arg == "--download":
             download_only = True
         else:
-            filter_form = arg
+            filter_arg = arg
 
-    # Find mapping files
-    pattern = os.path.join(MAPPINGS_DIR, "*.json")
-    mapping_files = sorted(glob.glob(pattern))
+    # Discover all mapping files
+    mappings = discover_mappings(filter_arg)
 
-    if filter_form:
-        mapping_files = [
-            f for f in mapping_files
-            if filter_form in os.path.basename(f)
-        ]
-
-    if not mapping_files:
-        print(f"No mapping files found in {MAPPINGS_DIR}/")
+    if not mappings:
+        print(f"No mapping files found.")
+        if filter_arg:
+            print(f"Filter '{filter_arg}' matched nothing.")
+            print(f"Available mappings:")
+            for _, _, label, _ in discover_mappings():
+                print(f"  {label}")
         sys.exit(1)
 
     # Download-only mode: just fetch all PDFs
     if download_only:
-        for mf in mapping_files:
-            with open(mf) as f:
+        for mapping_path, forms_dir, label, jurisdiction in mappings:
+            with open(mapping_path) as f:
                 mapping = json.load(f)
             pdf_name = mapping.get("_pdf")
             if pdf_name:
-                download_pdf(pdf_name)
-        print("\nAll PDFs downloaded to forms/")
+                download_pdf(pdf_name, forms_dir, jurisdiction)
+        print("\nAll PDFs downloaded.")
         return
 
     # Verify each mapping
     results = {}
-    for mf in mapping_files:
-        basename = os.path.splitext(os.path.basename(mf))[0]
-        results[basename] = verify_mapping(mf)
+    for mapping_path, forms_dir, label, jurisdiction in mappings:
+        results[label] = verify_mapping(mapping_path, forms_dir, label, jurisdiction)
 
     # Summary
     print(f"\n{'='*60}")
@@ -213,7 +245,7 @@ def main():
     print(f"{'='*60}")
 
     all_pass = True
-    for form, result in results.items():
+    for label, result in results.items():
         if result is None:
             status = "SKIP"
         elif result:
@@ -221,7 +253,7 @@ def main():
         else:
             status = "FAIL"
             all_pass = False
-        print(f"  {status:4s}  {form}")
+        print(f"  {status:4s}  {label}")
 
     if all_pass:
         print("\nAll mappings verified.")
