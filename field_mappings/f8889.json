@@ -4,21 +4,35 @@
   "_pdf": "f8889.pdf",
 
   "fields": {
-    "topmostSubform[0].Page1[0].f1_1[0]": "Name (if MFJ, name of spouse with HSA)",
-    "topmostSubform[0].Page1[0].f1_2[0]": "SSN of HSA holder",
+    "topmostSubform[0].Page1[0].f1_1[0]": "Name(s) shown on Form 1040, 1040-SR, or 1040-NR",
+    "topmostSubform[0].Page1[0].f1_2[0]": "Social security number of HSA beneficiary",
+    "topmostSubform[0].Page1[0].c1_1[0]": "Line 1 - Self-only HDHP coverage (checkbox /1)",
+    "topmostSubform[0].Page1[0].c1_1[1]": "Line 1 - Family HDHP coverage (checkbox /2)",
 
-    "topmostSubform[0].Page1[0].c1_1[0]": "Line 1 - Self-only HDHP (checkbox /1)",
-    "topmostSubform[0].Page1[0].c1_1[1]": "Line 1 - Family HDHP (checkbox /2)",
+    "topmostSubform[0].Page1[0].f1_3[0]": "Line 2 - HSA contributions you made for 2025 (or by 4/15/2026 deadline)",
+    "topmostSubform[0].Page1[0].f1_4[0]": "Line 3 - Contribution limit ($4,300 self-only, $8,550 family if under 55)",
+    "topmostSubform[0].Page1[0].f1_5[0]": "Line 4 - Employer contributions to Archer MSAs for 2025",
+    "topmostSubform[0].Page1[0].f1_6[0]": "Line 5 - Subtract line 4 from line 3 (if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_7[0]": "Line 6 - Enter the amount from line 5",
+    "topmostSubform[0].Page1[0].f1_8[0]": "Line 7 - Additional contribution amount if age 55 or older at end of 2025",
+    "topmostSubform[0].Page1[0].f1_9[0]": "Line 8 - Add lines 6 and 7",
+    "topmostSubform[0].Page1[0].f1_10[0]": "Line 9 - Employer contributions made to your HSAs for 2025 (Form W-2 Code W)",
+    "topmostSubform[0].Page1[0].f1_11[0]": "Line 10 - Qualified HSA funding distributions",
+    "topmostSubform[0].Page1[0].f1_12[0]": "Line 11 - Add lines 9 and 10",
+    "topmostSubform[0].Page1[0].f1_13[0]": "Line 12 - Subtract line 11 from line 8 (if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_14[0]": "Line 13 - HSA deduction (see instructions, to Schedule 1 line 13)",
 
-    "topmostSubform[0].Page1[0].f1_3[0]": "Line 2 - HSA contributions you made",
-    "topmostSubform[0].Page1[0].f1_4[0]": "Line 3 - Contribution limit",
-    "topmostSubform[0].Page1[0].f1_5[0]": "Line 4 - Archer MSA contributions",
-    "topmostSubform[0].Page1[0].f1_6[0]": "Line 5 - Line 3 minus line 4",
-    "topmostSubform[0].Page1[0].f1_7[0]": "Line 6 - Contribution limit (prorated)",
-    "topmostSubform[0].Page1[0].f1_9[0]": "Line 7 - Maximum contribution",
-    "topmostSubform[0].Page1[0].f1_10[0]": "Line 9 - Employer contributions (W-2 code W)",
-    "topmostSubform[0].Page1[0].f1_12[0]": "Line 10 - Qualified HSA funding distribution",
-    "topmostSubform[0].Page1[0].f1_13[0]": "Line 11 - Line 9 + line 10",
-    "topmostSubform[0].Page1[0].f1_14[0]": "Line 13 - HSA deduction"
+    "topmostSubform[0].Page1[0].f1_15[0]": "Line 14a - Total distributions you received in 2025 from all HSAs",
+    "topmostSubform[0].Page1[0].f1_16[0]": "Line 14b - Distributions on 14a rolled over to another HSA",
+    "topmostSubform[0].Page1[0].f1_17[0]": "Line 14c - Excess contributions (and earnings) on 14a withdrawn by due date",
+    "topmostSubform[0].Page1[0].f1_18[0]": "Line 15 - Qualified medical expenses paid using HSA distributions",
+    "topmostSubform[0].Page1[0].f1_19[0]": "Line 16 - Taxable HSA distributions (subtract line 15 from line 14c, if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].c1_2[0]": "Line 17a - Exceptions to the Additional 20% Tax checkbox (checkbox /1)",
+    "topmostSubform[0].Page1[0].f1_20[0]": "Line 17b - Additional 20% tax (to Schedule 2 line 17c)",
+
+    "topmostSubform[0].Page1[0].f1_21[0]": "Line 18 - Last-month rule",
+    "topmostSubform[0].Page1[0].f1_22[0]": "Line 19 - Qualified HSA funding distribution",
+    "topmostSubform[0].Page1[0].f1_23[0]": "Line 20 - Total income (add lines 18 and 19, to Schedule 1 line 8f)",
+    "topmostSubform[0].Page1[0].f1_24[0]": "Line 21 - Additional tax (multiply line 20 by 10%, to Schedule 2 line 17d)"
   }
 }

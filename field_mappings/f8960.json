@@ -1,23 +1,50 @@
 {
-  "_form": "Form 8960 - Net Investment Income Tax (NIIT)",
+  "_form": "Form 8960 - Net Investment Income Tax",
   "_tax_year": "2025",
   "_pdf": "f8960.pdf",
 
   "fields": {
-    "topmostSubform[0].Page1[0].f1_1[0]": "Name(s) shown on return",
-    "topmostSubform[0].Page1[0].f1_2[0]": "SSN",
+    "topmostSubform[0].Page1[0].f1_1[0]": "Name(s) shown on tax return",
+    "topmostSubform[0].Page1[0].f1_2[0]": "Your social security number or EIN",
+    "topmostSubform[0].Page1[0].PartI[0].c1_1[0]": "Section 6013(g) election checkbox (checkbox /1)",
+    "topmostSubform[0].Page1[0].PartI[0].c1_2[0]": "Section 6013(h) election checkbox (checkbox /1)",
+    "topmostSubform[0].Page1[0].PartI[0].c1_3[0]": "Regulations section 1.1411-10(g) election checkbox (checkbox /1)",
 
     "topmostSubform[0].Page1[0].f1_3[0]": "Line 1 - Taxable interest",
     "topmostSubform[0].Page1[0].f1_4[0]": "Line 2 - Ordinary dividends",
-    "topmostSubform[0].Page1[0].f1_9[0]": "Line 5a - Net gain/loss from capital assets",
-    "topmostSubform[0].Page1[0].f1_12[0]": "Line 8 - Total investment income",
-    "topmostSubform[0].Page1[0].f1_15[0]": "Line 11 - Deductions allocable to investment income",
+    "topmostSubform[0].Page1[0].f1_5[0]": "Line 3 - Annuities (see instructions)",
+    "topmostSubform[0].Page1[0].f1_6[0]": "Line 4a - Rental real estate, royalties, partnerships, S corps, trusts, trades or businesses",
+    "topmostSubform[0].Page1[0].f1_7[0]": "Line 4b - Adjustment for net income or loss from non-section 1411 trade or business",
+    "topmostSubform[0].Page1[0].f1_8[0]": "Line 4c - Combine lines 4a and 4b",
+    "topmostSubform[0].Page1[0].f1_9[0]": "Line 5a - Net gain or loss from disposition of property",
+    "topmostSubform[0].Page1[0].f1_10[0]": "Line 5b - Net gain or loss from disposition of property not subject to NIIT",
+    "topmostSubform[0].Page1[0].f1_11[0]": "Line 5c - Adjustment from disposition of partnership interest or S corp stock",
+    "topmostSubform[0].Page1[0].f1_12[0]": "Line 5d - Combine lines 5a through 5c",
+    "topmostSubform[0].Page1[0].f1_13[0]": "Line 6 - Adjustments to investment income for certain CFCs and PFICs",
+    "topmostSubform[0].Page1[0].f1_14[0]": "Line 7 - Other modifications to investment income",
+    "topmostSubform[0].Page1[0].f1_15[0]": "Line 8 - Total investment income (combine lines 1, 2, 3, 4c, 5d, 6, and 7)",
 
-    "topmostSubform[0].Page1[0].f1_22[0]": "Line 12 - Net investment income",
-    "topmostSubform[0].Page1[0].f1_23[0]": "Line 13 - MAGI",
-    "topmostSubform[0].Page1[0].f1_24[0]": "Line 14 - Threshold ($250k MFJ)",
-    "topmostSubform[0].Page1[0].f1_25[0]": "Line 15 - MAGI excess",
-    "topmostSubform[0].Page1[0].f1_26[0]": "Line 16 - Smaller of line 12 or 15",
-    "topmostSubform[0].Page1[0].f1_27[0]": "Line 17 - NIIT (3.8%)"
+    "topmostSubform[0].Page1[0].f1_16[0]": "Line 9a - Investment interest expenses",
+    "topmostSubform[0].Page1[0].f1_17[0]": "Line 9b - State, local, and foreign income tax",
+    "topmostSubform[0].Page1[0].f1_18[0]": "Line 9c - Miscellaneous investment expenses",
+    "topmostSubform[0].Page1[0].f1_19[0]": "Line 9d - Add lines 9a, 9b, and 9c",
+    "topmostSubform[0].Page1[0].f1_20[0]": "Line 10 - Additional modifications",
+    "topmostSubform[0].Page1[0].f1_21[0]": "Line 11 - Total deductions and modifications (add lines 9d and 10)",
+
+    "topmostSubform[0].Page1[0].f1_22[0]": "Line 12 - Net investment income (subtract line 11 from line 8)",
+    "topmostSubform[0].Page1[0].f1_23[0]": "Line 13 - Modified adjusted gross income",
+    "topmostSubform[0].Page1[0].f1_24[0]": "Line 14 - Threshold ($250,000 MFJ/QSS, $125,000 MFS, $200,000 other)",
+    "topmostSubform[0].Page1[0].f1_25[0]": "Line 15 - Subtract line 14 from line 13 (if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_26[0]": "Line 16 - Enter the smaller of line 12 or line 15",
+    "topmostSubform[0].Page1[0].f1_27[0]": "Line 17 - NIIT for individuals (line 16 x 3.8%, to Schedule 2 line 12)",
+
+    "topmostSubform[0].Page1[0].f1_28[0]": "Line 18a - Net investment income (line 12 above)",
+    "topmostSubform[0].Page1[0].f1_29[0]": "Line 18b - Deductions for distributions of net investment income and charitable deductions",
+    "topmostSubform[0].Page1[0].f1_30[0]": "Line 18c - Undistributed net investment income (subtract 18b from 18a, if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_31[0]": "Line 19a - Adjusted gross income (estates and trusts)",
+    "topmostSubform[0].Page1[0].f1_32[0]": "Line 19b - Highest tax bracket for estates and trusts for the year",
+    "topmostSubform[0].Page1[0].f1_33[0]": "Line 19c - Subtract line 19b from line 19a (if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_34[0]": "Line 20 - Enter the smaller of line 18c or line 19c",
+    "topmostSubform[0].Page1[0].f1_35[0]": "Line 21 - NIIT for estates and trusts (line 20 x 3.8%)"
   }
 }

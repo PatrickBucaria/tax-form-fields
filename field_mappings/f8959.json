@@ -4,21 +4,36 @@
   "_pdf": "f8959.pdf",
 
   "fields": {
-    "topmostSubform[0].Page1[0].f1_1[0]": "Name(s) shown on return",
-    "topmostSubform[0].Page1[0].f1_2[0]": "SSN",
+    "topmostSubform[0].Page1[0].f1_1[0]": "Name(s) shown on tax return",
+    "topmostSubform[0].Page1[0].f1_2[0]": "Your SSN",
 
-    "topmostSubform[0].Page1[0].f1_3[0]": "Line 1 - Medicare wages (W-2 box 5, all combined)",
-    "topmostSubform[0].Page1[0].f1_6[0]": "Line 4 - Total Medicare compensation",
-    "topmostSubform[0].Page1[0].f1_7[0]": "Line 5 - Threshold ($250k MFJ)",
-    "topmostSubform[0].Page1[0].f1_8[0]": "Line 6 - Excess wages",
-    "topmostSubform[0].Page1[0].f1_9[0]": "Line 7 - Additional Medicare Tax (0.9%)",
+    "topmostSubform[0].Page1[0].f1_3[0]": "Line 1 - Medicare wages and tips from Form W-2, box 5",
+    "topmostSubform[0].Page1[0].f1_4[0]": "Line 2 - Unreported tips from Form 4137, line 6",
+    "topmostSubform[0].Page1[0].f1_5[0]": "Line 3 - Wages from Form 8919, line 6",
+    "topmostSubform[0].Page1[0].f1_6[0]": "Line 4 - Add lines 1 through 3",
+    "topmostSubform[0].Page1[0].f1_7[0]": "Line 5 - Filing status threshold ($250,000 MFJ, $125,000 MFS, $200,000 other)",
+    "topmostSubform[0].Page1[0].f1_8[0]": "Line 6 - Subtract line 5 from line 4 (if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_9[0]": "Line 7 - Additional Medicare Tax on Medicare wages (line 6 x 0.9%)",
 
-    "topmostSubform[0].Page1[0].f1_20[0]": "Line 18 - Total Additional Medicare Tax",
+    "topmostSubform[0].Page1[0].f1_10[0]": "Line 8 - Self-employment income from Schedule SE, Part I, line 6",
+    "topmostSubform[0].Page1[0].f1_11[0]": "Line 9 - Filing status threshold (same as line 5)",
+    "topmostSubform[0].Page1[0].f1_12[0]": "Line 10 - Enter the amount from line 4",
+    "topmostSubform[0].Page1[0].f1_13[0]": "Line 11 - Subtract line 10 from line 9 (if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_14[0]": "Line 12 - Subtract line 11 from line 8 (if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_15[0]": "Line 13 - Additional Medicare Tax on self-employment income (line 12 x 0.9%)",
 
-    "topmostSubform[0].Page1[0].f1_21[0]": "Line 19 - Medicare tax withheld (W-2 box 6)",
-    "topmostSubform[0].Page1[0].f1_22[0]": "Line 20 - Medicare wages (W-2 box 5)",
-    "topmostSubform[0].Page1[0].f1_23[0]": "Line 21 - Regular Medicare tax (1.45%)",
-    "topmostSubform[0].Page1[0].f1_24[0]": "Line 22 - Additional Medicare already withheld",
-    "topmostSubform[0].Page1[0].f1_26[0]": "Line 24 - Total withholding credit"
+    "topmostSubform[0].Page1[0].f1_16[0]": "Line 14 - Railroad retirement (RRTA) compensation and tips from Form(s) W-2, box 14",
+    "topmostSubform[0].Page1[0].f1_17[0]": "Line 15 - Filing status threshold (same as line 5)",
+    "topmostSubform[0].Page1[0].f1_18[0]": "Line 16 - Subtract line 15 from line 14 (if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_19[0]": "Line 17 - Additional Medicare Tax on RRTA compensation (line 16 x 0.9%)",
+
+    "topmostSubform[0].Page1[0].f1_20[0]": "Line 18 - Total Additional Medicare Tax (add lines 7, 13, and 17, to Schedule 2 line 11)",
+
+    "topmostSubform[0].Page1[0].f1_21[0]": "Line 19 - Medicare tax withheld from Form W-2, box 6",
+    "topmostSubform[0].Page1[0].f1_22[0]": "Line 20 - Enter the amount from line 1",
+    "topmostSubform[0].Page1[0].f1_23[0]": "Line 21 - Multiply line 20 by 1.45% (0.0145) - regular Medicare tax on wages",
+    "topmostSubform[0].Page1[0].f1_24[0]": "Line 22 - Subtract line 21 from line 19 (if zero or less, enter 0)",
+    "topmostSubform[0].Page1[0].f1_25[0]": "Line 23 - Additional Medicare Tax withholding on RRTA compensation from Form W-2, box 14",
+    "topmostSubform[0].Page1[0].f1_26[0]": "Line 24 - Total Additional Medicare Tax withholding (add lines 22 and 23, to Form 1040 line 25c)"
   }
 }

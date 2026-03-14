@@ -2,6 +2,8 @@
 
 Machine-readable mappings from IRS form line numbers to PDF field names, plus tools to fill and verify them. Built for AI coding agents that assist with tax preparation.
 
+> **Tax year 2025.** The IRS changes PDF field names between years. These mappings are verified against the 2025 blank forms. For other years, download the new PDFs and run `verify_mappings.py` to see what broke.
+
 ## The Problem
 
 IRS fillable PDFs use opaque field names like `topmostSubform[0].Page1[0].f1_47[0]` instead of `line_1a_wages`. There's no official mapping. Figuring out which field is which requires dumping metadata, writing test values, and visually inspecting the output. This repo provides pre-verified mappings for 15 common federal forms.
@@ -80,7 +82,7 @@ python3 verify_mappings.py f1040        # verify just Form 1040
 python3 verify_mappings.py --download   # download PDFs without verifying
 ```
 
-PDFs are cached in `forms/` (gitignored).
+PDFs are included in `forms/` (2025 blank forms from irs.gov).
 
 ## fill_pdf.py
 

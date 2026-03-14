@@ -5,27 +5,76 @@
 
   "fields": {
     "topmostSubform[0].Page1[0].f1_1[0]": "Name(s) shown on return",
-    "topmostSubform[0].Page1[0].f1_2[0]": "SSN",
+    "topmostSubform[0].Page1[0].f1_2[0]": "Your social security number",
 
-    "topmostSubform[0].Page1[0].c1_1[1]": "Opportunity Zone: No (checkbox /2)",
+    "topmostSubform[0].Page1[0].c1_1[0]": "Qualified opportunity fund disposition: Yes (checkbox /1)",
+    "topmostSubform[0].Page1[0].c1_1[1]": "Qualified opportunity fund disposition: No (checkbox /2)",
 
-    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_7[0]": "Line 1b col (d) - ST proceeds (Form 8949 Box A)",
-    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_8[0]": "Line 1b col (e) - ST cost basis (Form 8949 Box A)",
-    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_9[0]": "Line 1b col (g) - ST adjustments (Form 8949 Box A)",
-    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_10[0]": "Line 1b col (h) - ST gain/loss (Form 8949 Box A)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1a[0].f1_3[0]": "Line 1a col (d) - Proceeds (totals for all ST transactions on Form 1099-B for which basis was reported to IRS)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1a[0].f1_4[0]": "Line 1a col (e) - Cost or other basis",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1a[0].f1_5[0]": "Line 1a col (g) - Adjustments to gain or loss from Form(s) 8949",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1a[0].f1_6[0]": "Line 1a col (h) - Gain or (loss)",
 
-    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_11[0]": "Line 2 col (d) - ST proceeds (Form 8949 Box B)",
-    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_12[0]": "Line 2 col (e) - ST cost basis (Form 8949 Box B)",
-    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_13[0]": "Line 2 col (g) - ST adjustments (Form 8949 Box B)",
-    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_14[0]": "Line 2 col (h) - ST gain/loss (Form 8949 Box B)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_7[0]": "Line 1b col (d) - Proceeds (Form 8949 Box A or Box G)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_8[0]": "Line 1b col (e) - Cost or other basis",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_9[0]": "Line 1b col (g) - Adjustments to gain or loss",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_10[0]": "Line 1b col (h) - Gain or (loss)",
 
-    "topmostSubform[0].Page1[0].f1_22[0]": "Line 7 - Net short-term capital gain or loss",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_11[0]": "Line 2 col (d) - Proceeds (Form 8949 Box B or Box H)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_12[0]": "Line 2 col (e) - Cost or other basis",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_13[0]": "Line 2 col (g) - Adjustments to gain or loss",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_14[0]": "Line 2 col (h) - Gain or (loss)",
 
-    "topmostSubform[0].Page1[0].f1_42[0]": "Line 14 - LT capital loss carryover from prior year",
-    "topmostSubform[0].Page1[0].f1_43[0]": "Line 15 - Net long-term capital gain or loss",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row3[0].f1_15[0]": "Line 3 col (d) - Proceeds (Form 8949 Box C or Box I)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row3[0].f1_16[0]": "Line 3 col (e) - Cost or other basis",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row3[0].f1_17[0]": "Line 3 col (g) - Adjustments to gain or loss",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row3[0].f1_18[0]": "Line 3 col (h) - Gain or (loss)",
 
-    "topmostSubform[0].Page2[0].f2_1[0]": "Line 16 - Combined net gain/loss (line 7 + line 15)",
-    "topmostSubform[0].Page2[0].f2_4[0]": "Line 21 - Capital loss deduction (max -$3,000)",
-    "topmostSubform[0].Page2[0].c2_3[0]": "Line 22 - Qualified dividends? (checkbox /1 = yes)"
+    "topmostSubform[0].Page1[0].f1_19[0]": "Line 4 - Short-term gain from Form 6252 and short-term gain or (loss) from Forms 4684, 6781, and 8824",
+    "topmostSubform[0].Page1[0].f1_20[0]": "Line 5 - Net short-term gain or (loss) from partnerships, S corporations, estates, and trusts from Schedule(s) K-1",
+    "topmostSubform[0].Page1[0].f1_21[0]": "Line 6 - Short-term capital loss carryover",
+    "topmostSubform[0].Page1[0].f1_22[0]": "Line 7 - Net short-term capital gain or (loss)",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8a[0].f1_23[0]": "Line 8a col (d) - Proceeds (totals for all LT transactions on Form 1099-B for which basis was reported to IRS)",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8a[0].f1_24[0]": "Line 8a col (e) - Cost or other basis",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8a[0].f1_25[0]": "Line 8a col (g) - Adjustments to gain or loss from Form(s) 8949",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8a[0].f1_26[0]": "Line 8a col (h) - Gain or (loss)",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8b[0].f1_27[0]": "Line 8b col (d) - Proceeds (Form 8949 Box D or Box J)",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8b[0].f1_28[0]": "Line 8b col (e) - Cost or other basis",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8b[0].f1_29[0]": "Line 8b col (g) - Adjustments to gain or loss",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8b[0].f1_30[0]": "Line 8b col (h) - Gain or (loss)",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row9[0].f1_31[0]": "Line 9 col (d) - Proceeds (Form 8949 Box E or Box K)",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row9[0].f1_32[0]": "Line 9 col (e) - Cost or other basis",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row9[0].f1_33[0]": "Line 9 col (g) - Adjustments to gain or loss",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row9[0].f1_34[0]": "Line 9 col (h) - Gain or (loss)",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row10[0].f1_35[0]": "Line 10 col (d) - Proceeds (Form 8949 Box F or Box L)",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row10[0].f1_36[0]": "Line 10 col (e) - Cost or other basis",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row10[0].f1_37[0]": "Line 10 col (g) - Adjustments to gain or loss",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row10[0].f1_38[0]": "Line 10 col (h) - Gain or (loss)",
+
+    "topmostSubform[0].Page1[0].f1_39[0]": "Line 11 - Gain from Form 4797, Part I; long-term gain from Forms 2439 and 6252; and long-term gain or (loss) from Forms 4684, 6781, and 8824",
+    "topmostSubform[0].Page1[0].f1_40[0]": "Line 12 - Net long-term gain or (loss) from partnerships, S corporations, estates, and trusts from Schedule(s) K-1",
+    "topmostSubform[0].Page1[0].f1_41[0]": "Line 13 - Capital gain distributions",
+    "topmostSubform[0].Page1[0].f1_42[0]": "Line 14 - Long-term capital loss carryover",
+    "topmostSubform[0].Page1[0].f1_43[0]": "Line 15 - Net long-term capital gain or (loss)",
+
+    "topmostSubform[0].Page2[0].f2_1[0]": "Line 16 - Combine lines 7 and 15 and enter the result",
+
+    "topmostSubform[0].Page2[0].c2_1[0]": "Line 17 - Are lines 15 and 16 both gains? Yes (checkbox /1)",
+    "topmostSubform[0].Page2[0].c2_1[1]": "Line 17 - Are lines 15 and 16 both gains? No (checkbox /2)",
+
+    "topmostSubform[0].Page2[0].f2_2[0]": "Line 18 - 28% Rate Gain Worksheet amount",
+    "topmostSubform[0].Page2[0].f2_3[0]": "Line 19 - Unrecaptured Section 1250 Gain Worksheet amount",
+
+    "topmostSubform[0].Page2[0].c2_2[0]": "Line 20 - Are lines 18 and 19 both zero or blank and not filing Form 4952? Yes (checkbox /1)",
+    "topmostSubform[0].Page2[0].c2_2[1]": "Line 20 - No (checkbox /2)",
+
+    "topmostSubform[0].Page2[0].f2_4[0]": "Line 21 - Capital loss deduction (smaller of: the loss on line 16; or ($3,000), or if MFS ($1,500))",
+
+    "topmostSubform[0].Page2[0].c2_3[0]": "Line 22 - Do you have qualified dividends? Yes (checkbox /1)",
+    "topmostSubform[0].Page2[0].c2_3[1]": "Line 22 - No (checkbox /2)"
   }
 }

@@ -5,20 +5,45 @@
   "_notes": "Uses 'form1[0]' root prefix, NOT 'topmostSubform[0]'",
 
   "fields": {
-    "form1[0].Page1[0].f1_1[0]": "Name(s) shown on Form 1040",
+    "form1[0].Page1[0].f1_1[0]": "Name(s) shown on Form 1040 or 1040-SR",
     "form1[0].Page1[0].f1_2[0]": "Your SSN",
 
-    "form1[0].Page1[0].f1_7[0]": "Line 5a - State and local income taxes",
-    "form1[0].Page1[0].f1_8[0]": "Line 5b - Personal property taxes",
-    "form1[0].Page1[0].f1_9[0]": "Line 5c - Real estate taxes",
-    "form1[0].Page1[0].f1_10[0]": "Line 5d - Total of 5a through 5c",
-    "form1[0].Page1[0].f1_11[0]": "Line 5e - SALT deduction (capped)",
-    "form1[0].Page1[0].f1_14[0]": "Line 7 - Total taxes paid",
+    "form1[0].Page1[0].f1_3[0]": "Line 1 - Medical and dental expenses",
+    "form1[0].Page1[0].Line2_ReadOrder[0].f1_4[0]": "Line 2 - Enter amount from Form 1040 or 1040-SR, line 11b",
+    "form1[0].Page1[0].f1_5[0]": "Line 3 - Multiply line 2 by 7.5% (0.075)",
+    "form1[0].Page1[0].f1_6[0]": "Line 4 - Subtract line 3 from line 1 (if line 3 > line 1, enter 0)",
 
-    "form1[0].Page1[0].f1_15[0]": "Line 8a - Home mortgage interest (Form 1098)",
-    "form1[0].Page1[0].f1_20[0]": "Line 9 - Points not on Form 1098",
-    "form1[0].Page1[0].f1_22[0]": "Line 10 - Total interest paid",
+    "form1[0].Page1[0].c1_1[0]": "Line 5a - General sales taxes checkbox (check if using sales taxes instead of income taxes) (checkbox /1)",
+    "form1[0].Page1[0].f1_7[0]": "Line 5a - State and local income taxes or general sales taxes",
+    "form1[0].Page1[0].f1_8[0]": "Line 5b - State and local real estate taxes",
+    "form1[0].Page1[0].f1_9[0]": "Line 5c - State and local personal property taxes",
+    "form1[0].Page1[0].f1_10[0]": "Line 5d - Add lines 5a through 5c",
+    "form1[0].Page1[0].f1_11[0]": "Line 5e - Enter the smaller of line 5d or $40,000 ($20,000 MFS)",
+    "form1[0].Page1[0].f1_12[0]": "Line 6 - Other taxes description (list type and amount)",
+    "form1[0].Page1[0].f1_13[0]": "Line 6 - Other taxes amount",
+    "form1[0].Page1[0].f1_14[0]": "Line 7 - Add lines 5e and 6",
 
-    "form1[0].Page1[0].f1_30[0]": "Line 17 - Total itemized deductions"
+    "form1[0].Page1[0].Line8_ReadOrder[0].c1_2[0]": "Line 8 - Caution checkbox: mortgage interest deduction may be limited (checkbox /1)",
+    "form1[0].Page1[0].f1_15[0]": "Line 8a - Home mortgage interest and points reported on Form 1098",
+    "form1[0].Page1[0].Line8b_ReadOrder[0].f1_16[0]": "Line 8b - Payee name, identifying no., and address",
+    "form1[0].Page1[0].f1_17[0]": "Line 8b - Home mortgage interest not reported on Form 1098",
+    "form1[0].Page1[0].f1_18[0]": "Line 8c - Points not reported to you on Form 1098",
+    "form1[0].Page1[0].f1_19[0]": "Line 8d - Reserved for future use",
+    "form1[0].Page1[0].f1_20[0]": "Line 8e - Add lines 8a through 8c",
+    "form1[0].Page1[0].f1_21[0]": "Line 9 - Investment interest (attach Form 4952 if required)",
+    "form1[0].Page1[0].f1_22[0]": "Line 10 - Add lines 8e and 9",
+
+    "form1[0].Page1[0].f1_23[0]": "Line 11 - Gifts by cash or check ($250 or more, see instructions)",
+    "form1[0].Page1[0].f1_24[0]": "Line 12 - Other than by cash or check (attach Form 8283 if $500+)",
+    "form1[0].Page1[0].f1_25[0]": "Line 13 - Carryover from prior year",
+    "form1[0].Page1[0].f1_26[0]": "Line 14 - Add lines 11 through 13",
+
+    "form1[0].Page1[0].f1_27[0]": "Line 15 - Casualty and theft loss(es) from federally declared disaster (attach Form 4684)",
+
+    "form1[0].Page1[0].f1_28[0]": "Line 16 - Other itemized deductions description (list type and amount)",
+    "form1[0].Page1[0].f1_29[0]": "Line 16 - Other itemized deductions amount",
+
+    "form1[0].Page1[0].f1_30[0]": "Line 17 - Total itemized deductions (add lines 4, 7, 10, 14, 15, and 16, to Form 1040 line 12)",
+    "form1[0].Page1[0].Line18_ReadOrder[0].c1_3[0]": "Line 18 - Elect to itemize even though less than standard deduction (checkbox /1)"
   }
 }

@@ -2,5 +2,6 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
-forms/
 output/
+visual_verify/*.png
+visual_verify/*.pdf
