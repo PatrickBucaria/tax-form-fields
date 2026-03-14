@@ -147,11 +147,6 @@ python3 visual_verify.py f1040sb       # generate labeled PNGs for Schedule B
 python3 visual_verify.py               # list available forms
 ```
 
-```bash
-python3 visual_verify.py f1040sb       # generate labeled PNGs for Schedule B
-python3 visual_verify.py               # list available forms
-```
-
 Requires `pdftoppm` (poppler). Output goes to `output/visual_verify/`.
 
 ## fill_pdf.py
