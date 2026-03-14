@@ -1,0 +1,31 @@
+{
+  "_form": "Form 8960 - Net Investment Income Tax (NIIT)",
+  "_tax_year": "2025",
+  "_pdf": "f8960.pdf",
+  "_notes": "Root prefix: topmostSubform[0].Page1[0]. 3.8% tax on lesser of NII or MAGI exceeding $250k (MFJ). Capital losses can make NII negative, resulting in $0 NIIT even with high MAGI.",
+
+  "_HEADER": {
+    "f1_1[0]": "Name(s) shown on return",
+    "f1_2[0]": "Your SSN"
+  },
+
+  "_INVESTMENT_INCOME": {
+    "f1_3[0]": "Line 1 - Taxable interest (from Form 1040 line 2b)",
+    "f1_4[0]": "Line 2 - Annuities/dividends (ordinary dividends, Form 1040 line 3b)",
+    "f1_9[0]": "Line 5a - Net gain/loss from capital assets (from Schedule D line 16)",
+    "f1_12[0]": "Line 8 - Total investment income (sum lines 1-7)"
+  },
+
+  "_DEDUCTIONS": {
+    "f1_15[0]": "Line 11 - Total deductions allocable to investment income"
+  },
+
+  "_COMPUTATION": {
+    "f1_22[0]": "Line 12 - Net investment income (line 8 - line 11, not less than 0 for tax)",
+    "f1_23[0]": "Line 13 - MAGI (Form 1040 line 11 AGI, adjusted)",
+    "f1_24[0]": "Line 14 - Threshold ($250k MFJ, $200k Single)",
+    "f1_25[0]": "Line 15 - MAGI excess (line 13 - line 14)",
+    "f1_26[0]": "Line 16 - Smaller of line 12 or line 15",
+    "f1_27[0]": "Line 17 - NIIT (line 16 x 0.038, flows to Schedule 2 line 12)"
+  }
+}

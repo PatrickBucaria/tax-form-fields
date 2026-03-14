@@ -1,0 +1,30 @@
+{
+  "_form": "Schedule 1 (Form 1040) - Additional Income and Adjustments to Income",
+  "_tax_year": "2025",
+  "_pdf": "f1040s1.pdf",
+  "_notes": "Root prefix: topmostSubform[0].Page1[0]. Part I flows to Form 1040 line 8. Part II flows to Form 1040 line 10.",
+
+  "_HEADER": {
+    "f1_01[0]": "Name(s) shown on return",
+    "f1_02[0]": "Your SSN"
+  },
+
+  "_PART_I_ADDITIONAL_INCOME": {
+    "f1_05[0]": "Line 1 - Taxable refunds of state/local taxes",
+    "f1_06[0]": "Line 2a - Alimony received",
+    "f1_07[0]": "Line 3 - Business income or (loss) from Schedule C",
+    "f1_09[0]": "Line 5 - Rental, royalty, partnership, S corp from Schedule E",
+    "f1_11[0]": "Line 7 - Unemployment compensation",
+    "f1_12[0]": "Line 8a - Other income (1099-G gov payments, jury duty, etc.)",
+    "f1_38[0]": "Line 10 - Total additional income (sum of Part I lines)"
+  },
+
+  "_PART_II_ADJUSTMENTS": {
+    "f1_39[0]": "Line 11 - Educator expenses",
+    "f1_43[0]": "Line 13 - HSA deduction (from Form 8889 line 13)",
+    "f1_45[0]": "Line 15 - Deductible part of self-employment tax (from Schedule SE)",
+    "f1_51[0]": "Line 20 - Student loan interest deduction",
+    "f1_55[0]": "Line 24z - Other adjustments",
+    "f1_57[0]": "Line 26 - Total adjustments (sum of Part II lines)"
+  }
+}

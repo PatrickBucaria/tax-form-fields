@@ -1,0 +1,26 @@
+{
+  "_form": "Schedule 8812 (Form 1040) - Credits for Qualifying Children and Other Dependents",
+  "_tax_year": "2025",
+  "_pdf": "f1040s8812.pdf",
+  "_notes": "Root prefix: topmostSubform[0].Page1[0]. 2025 CTC = $2,200/child (OBBBA increase). Phaseout begins at $400k MFJ ($200k other) at $50 per $1,000 excess. Credit flows to Form 1040 line 19.",
+
+  "_HEADER": {
+    "f1_1[0]": "Name(s) shown on return",
+    "f1_2[0]": "Your SSN"
+  },
+
+  "_COMPUTATION": {
+    "f1_3[0]": "Line 1 - AGI from Form 1040 line 11",
+    "f1_7[0]": "Line 2d - Excluded income (usually 0)",
+    "f1_8[0]": "Line 3 - Add lines 1 and 2d",
+    "f1_9[0]": "Line 4 - Number of qualifying children under 17 with required SSN",
+    "f1_10[0]": "Line 5 - Line 4 x $2,200 ($2,000 in prior years)",
+    "Line6ReadOrder[0].f1_11[0]": "Line 6 - Number of other dependents",
+    "f1_12[0]": "Line 7 - Line 6 x $500",
+    "f1_13[0]": "Line 8 - Add lines 5 and 7",
+    "f1_14[0]": "Line 9 - Phaseout threshold ($400k MFJ, $200k other)",
+    "f1_15[0]": "Line 10 - Excess AGI rounded up to next $1,000",
+    "f1_16[0]": "Line 11 - Line 10 x 5% (phaseout amount)",
+    "c1_1[0]": "Line 12 checkbox - Is line 8 more than line 11? (/1 = No, stop here)"
+  }
+}

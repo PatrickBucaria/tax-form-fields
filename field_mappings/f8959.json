@@ -1,0 +1,31 @@
+{
+  "_form": "Form 8959 - Additional Medicare Tax",
+  "_tax_year": "2025",
+  "_pdf": "f8959.pdf",
+  "_notes": "Root prefix: topmostSubform[0].Page1[0]. Additional 0.9% Medicare tax on wages exceeding $250k (MFJ), $200k (Single), $125k (MFS).",
+
+  "_HEADER": {
+    "f1_1[0]": "Name(s) shown on return",
+    "f1_2[0]": "Your SSN"
+  },
+
+  "_PART_I_MEDICARE_WAGES": {
+    "f1_3[0]": "Line 1 - Medicare wages from W-2s (box 5, all W-2s combined)",
+    "f1_6[0]": "Line 4 - Total Medicare compensation (line 1 + unreported tips + SE)",
+    "f1_7[0]": "Line 5 - Filing status threshold ($250k MFJ, $200k Single)",
+    "f1_8[0]": "Line 6 - Excess wages (line 4 - line 5, but not less than zero)",
+    "f1_9[0]": "Line 7 - Additional Medicare Tax on wages (line 6 x 0.009)"
+  },
+
+  "_PART_IV_TOTAL": {
+    "f1_20[0]": "Line 18 - Total Additional Medicare Tax (sum Parts I-III)"
+  },
+
+  "_PART_V_WITHHOLDING": {
+    "f1_21[0]": "Line 19 - Medicare tax withheld from W-2s (box 6, all W-2s)",
+    "f1_22[0]": "Line 20 - Medicare wages from W-2s (box 5, for computation)",
+    "f1_23[0]": "Line 21 - Calculated regular Medicare tax (line 20 x 0.0145)",
+    "f1_24[0]": "Line 22 - Additional Medicare already withheld (line 19 - line 21)",
+    "f1_26[0]": "Line 24 - Total Medicare withholding credit (Schedule 3 line 11)"
+  }
+}

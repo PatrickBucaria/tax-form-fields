@@ -1,0 +1,29 @@
+{
+  "_form": "Form 8889 - Health Savings Accounts (HSAs)",
+  "_tax_year": "2025",
+  "_pdf": "f8889.pdf",
+  "_notes": "Root prefix: topmostSubform[0].Page1[0]. Required if you (or employer) made HSA contributions or received distributions. 2025 family limit: $8,550, self-only: $4,300.",
+
+  "_HEADER": {
+    "f1_1[0]": "Name(s) shown on return (if MFJ, name of spouse with HSA)",
+    "f1_2[0]": "SSN of HSA holder"
+  },
+
+  "_COVERAGE_TYPE": {
+    "c1_1[0]": "Line 1 - Self-only HDHP coverage (/1)",
+    "c1_1[1]": "Line 1 - Family HDHP coverage (/2)"
+  },
+
+  "_PART_I_CONTRIBUTIONS": {
+    "f1_3[0]": "Line 2 - HSA contributions you made for 2025 (not employer)",
+    "f1_4[0]": "Line 3 - HSA contribution limit ($4,300 self / $8,550 family)",
+    "f1_5[0]": "Line 4 - Archer MSA contributions for 2025",
+    "f1_6[0]": "Line 5 - Line 3 minus line 4",
+    "f1_7[0]": "Line 6 - Line 5 (or prorated if partial year coverage)",
+    "f1_9[0]": "Line 7 - Contribution limit (line 6, or catch-up adjusted)",
+    "f1_10[0]": "Line 9 - Employer contributions (W-2 box 12 code W)",
+    "f1_12[0]": "Line 10 - Qualified HSA funding distribution",
+    "f1_13[0]": "Line 11 - Line 9 + line 10",
+    "f1_14[0]": "Line 13 - HSA deduction (line 7 - line 11, flows to Schedule 1 line 13)"
+  }
+}

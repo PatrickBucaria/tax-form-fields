@@ -1,0 +1,91 @@
+{
+  "_form": "Form 1040 - U.S. Individual Income Tax Return",
+  "_tax_year": "2025",
+  "_pdf": "f1040.pdf",
+  "_notes": "Field mappings verified by filling and visually inspecting the 2025 IRS fillable PDF. Root prefix for Page 1: topmostSubform[0].Page1[0], Page 2: topmostSubform[0].Page2[0].",
+
+  "_PAGE_1_HEADER": {
+    "f1_14[0]": "Your first name",
+    "f1_15[0]": "Your last name",
+    "f1_16[0]": "Your SSN (9 digits, no dashes)",
+    "f1_17[0]": "Spouse first name (if MFJ/MFS)",
+    "f1_18[0]": "Spouse last name",
+    "f1_19[0]": "Spouse SSN (9 digits, no dashes)"
+  },
+
+  "_PAGE_1_ADDRESS": {
+    "_prefix": "Address_ReadOrder[0]",
+    "f1_20[0]": "Street address",
+    "f1_21[0]": "Apt number",
+    "f1_22[0]": "City",
+    "f1_23[0]": "State",
+    "f1_24[0]": "ZIP code"
+  },
+
+  "_FILING_STATUS": {
+    "c1_5[0]": "Filing status checkbox group. /1 = Single, use Checkbox_ReadOrder for MFJ/MFS/HOH/QSS",
+    "Checkbox_ReadOrder[0].c1_8[1]": "/2 = MFJ (Married Filing Jointly)"
+  },
+
+  "_DIGITAL_ASSETS": {
+    "c1_10[1]": "/2 = No digital asset transactions"
+  },
+
+  "_DEPENDENTS": {
+    "_prefix": "Table_Dependents[0]",
+    "Row1[0].f1_31[0]": "Dependent 1 first name",
+    "Row2[0].f1_35[0]": "Dependent 1 last name",
+    "Row3[0].f1_39[0]": "Dependent 1 SSN",
+    "Row4[0].f1_43[0]": "Dependent 1 relationship",
+    "Row5[0].Dependent1[0].c1_12[0]": "Dependent 1 CTC checkbox (/1)",
+    "Row5[0].Dependent1[0].c1_13[0]": "Dependent 1 credit for other dependents checkbox (/1)",
+    "Row7[0].Dependent1[0].c1_28[0]": "Dependent 1 qualifies for ACTC checkbox (/1)"
+  },
+
+  "_PAGE_1_INCOME": {
+    "f1_47[0]": "Line 1a - Wages, salaries, tips (W-2 box 1 total)",
+    "f1_57[0]": "Line 1z - Sum of lines 1a through 1h",
+    "f1_59[0]": "Line 2b - Taxable interest (from Schedule B line 4)",
+    "f1_60[0]": "Line 3a - Qualified dividends",
+    "f1_61[0]": "Line 3b - Ordinary dividends (from Schedule B line 6)",
+    "f1_65[0]": "Line 4b - Taxable IRA distributions",
+    "f1_66[0]": "Line 5a - Pensions and annuities",
+    "c1_38[0]": "Line 5b checkbox - Rollover (/1 if all nontaxable rollover)",
+    "f1_70[0]": "Line 7 - Capital gain or loss (from Schedule D line 21 or line 16)",
+    "f1_72[0]": "Line 8 - Other income (from Schedule 1 line 10)",
+    "f1_73[0]": "Line 9 - Total income",
+    "f1_75[0]": "Line 11 - Adjusted gross income (AGI)"
+  },
+
+  "_PAGE_2_TAX_AND_CREDITS": {
+    "_prefix": "topmostSubform[0].Page2[0]",
+    "f2_01[0]": "Line 11 - AGI (repeated from page 1)",
+    "f2_02[0]": "Line 12 - Standard deduction or itemized deductions (Schedule A line 17)",
+    "f2_05[0]": "Line 13 - Total deductions (line 12 + line 12a QBI if any)",
+    "f2_06[0]": "Line 14 - Taxable income (line 11 - line 13)",
+    "f2_08[0]": "Line 16 - Tax (from Tax Table, QD worksheet, or Schedule D worksheet)",
+    "f2_10[0]": "Line 18 - Total (line 16 + line 17 Schedule 2 Part I)",
+    "f2_14[0]": "Line 22 - Sum of lines 18-21 (after credits)",
+    "f2_15[0]": "Line 23 - Other taxes (from Schedule 2 line 21)",
+    "f2_16[0]": "Line 24 - Total tax"
+  },
+
+  "_PAGE_2_PAYMENTS": {
+    "_prefix": "topmostSubform[0].Page2[0]",
+    "f2_17[0]": "Line 25a - Federal income tax withheld from W-2s",
+    "f2_18[0]": "Line 25b - Federal tax withheld from 1099s",
+    "f2_19[0]": "Line 25c - Other withholding",
+    "f2_20[0]": "Line 25d - Total federal tax withheld",
+    "f2_29[0]": "Line 33 - Total payments",
+    "f2_31[0]": "Line 34 - Overpaid (if payments > tax)",
+    "f2_35[0]": "Line 37 - Amount you owe (if tax > payments)"
+  },
+
+  "_PAGE_2_SIGN_HERE": {
+    "_prefix": "topmostSubform[0].Page2[0]",
+    "f2_40[0]": "Your occupation",
+    "f2_42[0]": "Spouse's occupation",
+    "f2_45[0]": "Email address",
+    "c2_17[1]": "Third party designee - No (/2)"
+  }
+}

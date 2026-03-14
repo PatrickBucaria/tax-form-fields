@@ -1,0 +1,31 @@
+{
+  "_form": "Schedule E (Form 1040) - Supplemental Income and Loss",
+  "_tax_year": "2025",
+  "_pdf": "f1040se.pdf",
+  "_notes": "Root prefix: topmostSubform[0]. Page 1 = Part I (rental/royalty). Page 2 = Part II (partnerships/S-corps). K-1 income flows through Part II. Final total (line 41) flows to Schedule 1 line 5.",
+
+  "_HEADER": {
+    "Page1[0].f1_1[0]": "Name(s) shown on return",
+    "Page1[0].f1_2[0]": "Your SSN",
+    "Page2[0].f2_1[0]": "Name(s) (repeated on page 2)",
+    "Page2[0].f2_2[0]": "SSN (repeated on page 2)"
+  },
+
+  "_PART_II_PARTNERSHIPS_S_CORPS": {
+    "_prefix": "topmostSubform[0].Page2[0]",
+    "c2_1[1]": "Line 27 - Are you reporting a loss not allowed in prior year due to at-risk/basis rules? No (/2)",
+
+    "Table_Line28a-f[0].RowA[0].f2_3[0]": "Line 28A col (a) - Name of entity",
+    "Table_Line28a-f[0].RowA[0].f2_4[0]": "Line 28A col (b) - Type (P=partnership, S=S-corp)",
+    "Table_Line28a-f[0].RowA[0].f2_5[0]": "Line 28A col (c) - Entity EIN",
+    "Table_Line28a-f[0].RowA[0].c2_3[0]": "Line 28A col (d) - Check if foreign partnership (/1)",
+
+    "Table_Line28g-k[0].RowA[0].f2_17[0]": "Line 28A col (h) - Nonpassive loss from K-1",
+
+    "f2_42[0]": "Line 32 - Total nonpassive income or loss",
+    "f2_46[0]": "Line 40 - Total income or (loss) from partnerships/S-corps (if loss, use parens)",
+    "f2_47[0]": "Line 41 - Total supplemental income/loss (flows to Schedule 1 line 5)",
+
+    "f2_78[0]": "Line 41 - Total (repeated, bottom of page)"
+  }
+}

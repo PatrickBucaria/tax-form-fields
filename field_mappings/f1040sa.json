@@ -1,0 +1,30 @@
+{
+  "_form": "Schedule A (Form 1040) - Itemized Deductions",
+  "_tax_year": "2025",
+  "_pdf": "f1040sa.pdf",
+  "_notes": "Root prefix: form1[0].Page1[0] (note: Schedule A uses 'form1' not 'topmostSubform'). OBBBA (2025) raised SALT cap from $10k to $40k with phase-out above $400k AGI.",
+
+  "_HEADER": {
+    "f1_1[0]": "Name(s) shown on Form 1040",
+    "f1_2[0]": "Your SSN"
+  },
+
+  "_TAXES_YOU_PAID": {
+    "f1_7[0]": "Line 5a - State and local income taxes (or sales taxes)",
+    "f1_8[0]": "Line 5b - State and local personal property taxes",
+    "f1_9[0]": "Line 5c - State and local real estate taxes",
+    "f1_10[0]": "Line 5d - Total of 5a through 5c",
+    "f1_11[0]": "Line 5e - SALT deduction (lesser of 5d or SALT cap, $10k or $40k OBBBA)",
+    "f1_14[0]": "Line 7 - Total taxes paid (after SALT cap)"
+  },
+
+  "_INTEREST_YOU_PAID": {
+    "f1_15[0]": "Line 8a - Home mortgage interest from Form 1098",
+    "f1_20[0]": "Line 9 - Points not reported on Form 1098",
+    "f1_22[0]": "Line 10 - Total interest paid"
+  },
+
+  "_TOTAL": {
+    "f1_30[0]": "Line 17 - Total itemized deductions"
+  }
+}
