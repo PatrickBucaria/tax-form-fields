@@ -1,4 +1,4 @@
-# irs-form-fields
+# tax-form-fields
 
 Machine-readable mappings from tax form PDF field names to human-readable line numbers. 1,590 fields across 16 forms (15 federal + NY IT-203), with 100% coverage of every fillable field. Organized by tax year and jurisdiction for easy extension.
 
