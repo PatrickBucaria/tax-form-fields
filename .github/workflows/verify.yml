@@ -1,0 +1,30 @@
+name: Verify Mappings
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'field_mappings/**'
+      - 'verify_mappings.py'
+      - 'forms/**'
+  pull_request:
+    paths:
+      - 'field_mappings/**'
+      - 'verify_mappings.py'
+      - 'forms/**'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pypdf
+
+      - name: Verify all field mappings
+        run: python3 verify_mappings.py
