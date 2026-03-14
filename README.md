@@ -204,6 +204,10 @@ To fix an existing mapping:
 2. Run `python3 verify_mappings.py f<form>` to confirm the fix
 3. Open a PR
 
+## Disclaimer
+
+This repo provides field name mappings only — it does not provide tax advice or guarantee correctness of any tax filing. You are responsible for reviewing and verifying all output before submitting anything to the IRS. Use at your own risk.
+
 ## License
 
 MIT
