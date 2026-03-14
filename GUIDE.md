@@ -87,6 +87,10 @@ Two layers of verification:
 
 With all forms filled and verified, I had a complete set of federal and state returns ready to file. Some states don't have fillable PDFs, so those were hand-filled from Claude's working notes.
 
+**Important: you can't e-file a PDF.** The IRS doesn't let you upload a filled PDF to submit your return. E-filing requires going through an authorized e-file provider (TurboTax, FreeTaxUSA, IRS Direct File, etc.), which means re-entering your data into their system. If you don't want to do that, the alternative is to **print and mail** your filled PDFs. Print the forms, sign them (both spouses for MFJ), attach a check if you owe, and mail to the IRS. State returns work similarly — some states have free e-file portals, others require paper.
+
+The filled PDFs this workflow produces are print-ready. You're not saving time on the filing step itself — you're saving time on the entire preparation process that comes before it.
+
 ## What Worked Well
 
 **Claude as a tax researcher.** Tax law is complex but well-documented. Claude can read IRS instructions, publications, and the actual statute and apply them correctly. It caught things I wouldn't have — like the fact that home office mortgage/taxes are "deductible elsewhere" expenses under Pub 587, meaning they're not limited by the tentative profit test.
