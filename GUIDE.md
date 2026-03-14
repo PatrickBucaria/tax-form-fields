@@ -1,6 +1,6 @@
 # How I Used AI to Prepare My Tax Return
 
-This is a walkthrough of how I used Claude (Anthropic's AI) to prepare and file federal and state tax returns — married filing jointly, with a mix of W-2s, investment income, a K-1, a Schedule C business, and a home office deduction. No accountant, no TurboTax.
+This is a walkthrough of how I used Claude to prepare and file federal and state tax returns — married filing jointly, with a mix of W-2s, investment income, a K-1, a Schedule C business, and a home office deduction. No accountant, no TurboTax.
 
 ## The Short Version
 
@@ -10,8 +10,6 @@ This is a walkthrough of how I used Claude (Anthropic's AI) to prepare and file 
 4. Use [tax-form-fields](https://github.com/PatrickBucaria/tax-form-fields) to programmatically fill the actual IRS and state PDFs
 5. Visually verify every filled form
 6. File
-
-Total cost: $0 (Claude subscription I already had). Time: a few evenings spread across a week.
 
 ## Step by Step
 
