@@ -73,13 +73,15 @@ Claude generated a JSON values file for each form, then filled the PDF. For my r
 
 ### 5. Verify everything
 
-Two layers of verification:
+I used separate Claude agents for preparation and review — a "CPA agent" to compute values and fill each form, and then an independent "audit agent" to review the result. The audit agent checked every filled form against the tax plan, IRS instructions, and source documents without seeing the CPA agent's reasoning. This catches errors that self-review misses, since the audit agent approaches each form fresh.
+
+Beyond the agent-level review, there were three more layers of verification:
 
 **Automated:** `verify_mappings.py` does round-trip tests on every field — writes a value, saves the PDF, re-reads it, confirms the value stuck.
 
 **Visual:** Convert filled PDFs to images and have Claude read them back, confirming every value appears on the correct line. This catches the class of errors where a field writes successfully but maps to the wrong line.
 
-**Arithmetic audit:** Claude verified every computation — additions, subtractions, percentages, cross-form references. Every number was checked against IRS instructions.
+**Arithmetic audit:** The audit agent verified every computation — additions, subtractions, percentages, cross-form references. Every number was checked against IRS instructions.
 
 ### 6. File
 
