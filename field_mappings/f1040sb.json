@@ -2,41 +2,33 @@
   "_form": "Schedule B (Form 1040) - Interest and Ordinary Dividends",
   "_tax_year": "2025",
   "_pdf": "f1040sb.pdf",
-  "_notes": "All fields on Page 1. Root prefix: topmostSubform[0].Page1[0]. Interest payers in odd fields (f1_03, f1_05, f1_07...), amounts in even fields (f1_04, f1_06, f1_08...). Dividend payers/amounts follow same pattern starting at f1_34.",
 
-  "_HEADER": {
-    "f1_01[0]": "Name(s) shown on return",
-    "f1_02[0]": "Your SSN"
-  },
+  "fields": {
+    "topmostSubform[0].Page1[0].f1_01[0]": "Name(s) shown on return",
+    "topmostSubform[0].Page1[0].f1_02[0]": "Your SSN",
 
-  "_PART_I_INTEREST": {
-    "Line1_ReadOrder[0].f1_03[0]": "Interest payer 1 name",
-    "f1_04[0]": "Interest payer 1 amount",
-    "f1_05[0]": "Interest payer 2 name",
-    "f1_06[0]": "Interest payer 2 amount",
-    "f1_07[0]": "Interest payer 3 name",
-    "f1_08[0]": "Interest payer 3 amount",
-    "f1_09[0]": "Interest payer 4 name",
-    "f1_10[0]": "Interest payer 4 amount",
-    "_note": "Pattern continues: odd fields = payer name, even fields = amount",
-    "f1_31[0]": "Line 2 - Total interest (add all amounts)",
-    "f1_33[0]": "Line 4 - Taxable interest (line 2 minus line 3 exclusion)"
-  },
+    "topmostSubform[0].Page1[0].Line1_ReadOrder[0].f1_03[0]": "Part I - Interest payer 1 name",
+    "topmostSubform[0].Page1[0].f1_04[0]": "Part I - Interest payer 1 amount",
+    "topmostSubform[0].Page1[0].f1_05[0]": "Part I - Interest payer 2 name",
+    "topmostSubform[0].Page1[0].f1_06[0]": "Part I - Interest payer 2 amount",
+    "topmostSubform[0].Page1[0].f1_07[0]": "Part I - Interest payer 3 name",
+    "topmostSubform[0].Page1[0].f1_08[0]": "Part I - Interest payer 3 amount",
+    "topmostSubform[0].Page1[0].f1_09[0]": "Part I - Interest payer 4 name",
+    "topmostSubform[0].Page1[0].f1_10[0]": "Part I - Interest payer 4 amount",
+    "topmostSubform[0].Page1[0].f1_31[0]": "Line 2 - Total interest",
+    "topmostSubform[0].Page1[0].f1_33[0]": "Line 4 - Taxable interest",
 
-  "_PART_II_DIVIDENDS": {
-    "ReadOrderControl[0].f1_34[0]": "Dividend payer 1 name",
-    "f1_35[0]": "Dividend payer 1 amount",
-    "f1_36[0]": "Dividend payer 2 name",
-    "f1_37[0]": "Dividend payer 2 amount",
-    "f1_38[0]": "Dividend payer 3 name",
-    "f1_39[0]": "Dividend payer 3 amount",
-    "f1_40[0]": "Dividend payer 4 name",
-    "f1_41[0]": "Dividend payer 4 amount",
-    "f1_64[0]": "Line 6 - Total ordinary dividends"
-  },
+    "topmostSubform[0].Page1[0].ReadOrderControl[0].f1_34[0]": "Part II - Dividend payer 1 name",
+    "topmostSubform[0].Page1[0].f1_35[0]": "Part II - Dividend payer 1 amount",
+    "topmostSubform[0].Page1[0].f1_36[0]": "Part II - Dividend payer 2 name",
+    "topmostSubform[0].Page1[0].f1_37[0]": "Part II - Dividend payer 2 amount",
+    "topmostSubform[0].Page1[0].f1_38[0]": "Part II - Dividend payer 3 name",
+    "topmostSubform[0].Page1[0].f1_39[0]": "Part II - Dividend payer 3 amount",
+    "topmostSubform[0].Page1[0].f1_40[0]": "Part II - Dividend payer 4 name",
+    "topmostSubform[0].Page1[0].f1_41[0]": "Part II - Dividend payer 4 amount",
+    "topmostSubform[0].Page1[0].f1_64[0]": "Line 6 - Total ordinary dividends",
 
-  "_PART_III_FOREIGN_ACCOUNTS": {
-    "TagcorrectingSubform[0].c1_1[1]": "Line 7a - Foreign accounts: No (/2)",
-    "c1_3[1]": "Line 8 - Foreign trust: No (/2)"
+    "topmostSubform[0].Page1[0].TagcorrectingSubform[0].c1_1[1]": "Line 7a - Foreign accounts: No (checkbox /2)",
+    "topmostSubform[0].Page1[0].c1_3[1]": "Line 8 - Foreign trust: No (checkbox /2)"
   }
 }

@@ -2,69 +2,39 @@
   "_form": "Schedule C (Form 1040) - Profit or Loss From Business",
   "_tax_year": "2025",
   "_pdf": "f1040sc.pdf",
-  "_notes": "Root prefix: topmostSubform[0].Page1[0] (page 1), topmostSubform[0].Page2[0] (page 2). Some expense lines are nested inside Lines8-17[0] and Lines18-27[0] containers.",
 
-  "_HEADER": {
-    "f1_1[0]": "Proprietor name",
-    "f1_2[0]": "SSN",
-    "f1_3[0]": "Line A - Principal business or profession",
-    "BComb[0].f1_4[0]": "Line B - Business activity code (6 digits)",
-    "f1_5[0]": "Line C - Business name",
-    "DComb[0].f1_6[0]": "Line D - EIN",
-    "f1_7[0]": "Line E - Business address (street)",
-    "f1_8[0]": "Line E - Business address (city, state, ZIP)"
-  },
+  "fields": {
+    "topmostSubform[0].Page1[0].f1_1[0]": "Proprietor name",
+    "topmostSubform[0].Page1[0].f1_2[0]": "SSN",
+    "topmostSubform[0].Page1[0].f1_3[0]": "Line A - Principal business or profession",
+    "topmostSubform[0].Page1[0].BComb[0].f1_4[0]": "Line B - Business activity code",
+    "topmostSubform[0].Page1[0].f1_5[0]": "Line C - Business name",
+    "topmostSubform[0].Page1[0].DComb[0].f1_6[0]": "Line D - EIN",
+    "topmostSubform[0].Page1[0].f1_7[0]": "Line E - Business address (street)",
+    "topmostSubform[0].Page1[0].f1_8[0]": "Line E - Business address (city, state, ZIP)",
 
-  "_CHECKBOXES": {
-    "c1_1[0]": "Line F - Accounting method: Cash (/1)",
-    "c1_1[1]": "Line F - Accounting method: Accrual (/2)",
-    "c1_2[0]": "Line G - Material participation: Yes (/Yes)",
-    "c1_4[0]": "Line I - Required to file 1099s: Yes (/Yes)"
-  },
+    "topmostSubform[0].Page1[0].c1_1[0]": "Line F - Accounting method: Cash (checkbox /1)",
+    "topmostSubform[0].Page1[0].c1_2[0]": "Line G - Material participation: Yes (checkbox /Yes)",
+    "topmostSubform[0].Page1[0].c1_4[0]": "Line I - Required to file 1099s: Yes (checkbox /Yes)",
 
-  "_INCOME": {
-    "f1_10[0]": "Line 1 - Gross receipts or sales",
-    "f1_12[0]": "Line 3 - Gross receipts minus returns (line 1 - line 2)",
-    "f1_14[0]": "Line 5 - Gross profit (line 3 - line 4 COGS)",
-    "f1_16[0]": "Line 7 - Gross income (line 5 + line 6 other income)"
-  },
+    "topmostSubform[0].Page1[0].f1_10[0]": "Line 1 - Gross receipts or sales",
+    "topmostSubform[0].Page1[0].f1_12[0]": "Line 3 - Gross receipts minus returns",
+    "topmostSubform[0].Page1[0].f1_14[0]": "Line 5 - Gross profit",
+    "topmostSubform[0].Page1[0].f1_16[0]": "Line 7 - Gross income",
 
-  "_EXPENSES_LINES_8_17": {
-    "_prefix": "Lines8-17[0]",
-    "f1_17[0]": "Line 8 - Advertising",
-    "f1_18[0]": "Line 9 - Car and truck expenses",
-    "f1_19[0]": "Line 10 - Commissions and fees",
-    "f1_20[0]": "Line 11 - Contract labor",
-    "f1_22[0]": "Line 13 - Depreciation and section 179",
-    "f1_24[0]": "Line 15 - Insurance (other than health)",
-    "f1_25[0]": "Line 16a - Mortgage interest paid to banks",
-    "f1_27[0]": "Line 17 - Legal and professional services"
-  },
+    "topmostSubform[0].Page1[0].Lines8-17[0].f1_17[0]": "Line 8 - Advertising",
+    "topmostSubform[0].Page1[0].Lines18-27[0].f1_28[0]": "Line 18 - Office expense",
+    "topmostSubform[0].Page1[0].Lines18-27[0].f1_33[0]": "Line 22 - Supplies",
+    "topmostSubform[0].Page1[0].Lines18-27[0].f1_35[0]": "Line 24a - Travel",
+    "topmostSubform[0].Page1[0].Lines18-27[0].f1_40[0]": "Line 27b - Other expenses (from Part V)",
 
-  "_EXPENSES_LINES_18_27": {
-    "_prefix": "Lines18-27[0]",
-    "f1_28[0]": "Line 18 - Office expense",
-    "f1_33[0]": "Line 22 - Supplies",
-    "f1_34[0]": "Line 23 - Taxes and licenses",
-    "f1_35[0]": "Line 24a - Travel",
-    "f1_36[0]": "Line 24b - Deductible meals",
-    "f1_39[0]": "Line 27a - Other expenses (from Part V line 48)",
-    "f1_40[0]": "Line 27b - Reserved for future use"
-  },
+    "topmostSubform[0].Page1[0].f1_41[0]": "Line 28 - Total expenses",
+    "topmostSubform[0].Page1[0].f1_42[0]": "Line 29 - Tentative profit",
+    "topmostSubform[0].Page1[0].Line30_ReadOrder[0].f1_43[0]": "Line 30 - Business use of home (from Form 8829)",
+    "topmostSubform[0].Page1[0].f1_45[0]": "Line 31 - Net profit or loss",
 
-  "_TOTALS": {
-    "f1_41[0]": "Line 28 - Total expenses before home office",
-    "f1_42[0]": "Line 29 - Tentative profit (line 7 - line 28)",
-    "Line30_ReadOrder[0].f1_43[0]": "Line 30 - Business use of home (from Form 8829 line 36)",
-    "f1_45[0]": "Line 31 - Net profit or (loss)"
-  },
-
-  "_PAGE_2_PART_V_OTHER_EXPENSES": {
-    "_prefix": "topmostSubform[0].Page2[0]",
-    "PartVTable[0].Item1[0].f2_15[0]": "Other expense 1 description",
-    "PartVTable[0].Item1[0].f2_16[0]": "Other expense 1 amount",
-    "PartVTable[0].Item2[0].f2_17[0]": "Other expense 2 description",
-    "PartVTable[0].Item2[0].f2_18[0]": "Other expense 2 amount",
-    "f2_33[0]": "Line 48 - Total other expenses"
+    "topmostSubform[0].Page2[0].PartVTable[0].Item1[0].f2_15[0]": "Part V - Other expense 1 description",
+    "topmostSubform[0].Page2[0].PartVTable[0].Item1[0].f2_16[0]": "Part V - Other expense 1 amount",
+    "topmostSubform[0].Page2[0].f2_33[0]": "Line 48 - Total other expenses"
   }
 }

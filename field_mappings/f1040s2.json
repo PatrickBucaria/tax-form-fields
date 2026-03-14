@@ -2,22 +2,15 @@
   "_form": "Schedule 2 (Form 1040) - Additional Taxes",
   "_tax_year": "2025",
   "_pdf": "f1040s2.pdf",
-  "_notes": "Root prefix: form1[0].Page1[0] (page 1), form1[0].Page2[0] (page 2). Note: uses 'form1' not 'topmostSubform'. Part I line 3 flows to Form 1040 line 17. Part II line 21 flows to Form 1040 line 23.",
+  "_notes": "Uses 'form1[0]' root prefix, NOT 'topmostSubform[0]'",
 
-  "_HEADER": {
-    "f1_01[0]": "Name(s) shown on return",
-    "f1_02[0]": "Your SSN"
-  },
+  "fields": {
+    "form1[0].Page1[0].f1_01[0]": "Name(s) shown on return",
+    "form1[0].Page1[0].f1_02[0]": "Your SSN",
 
-  "_PART_I_TAX": {
-    "f1_03[0]": "Line 1 - AMT (from Form 6251)",
-    "f1_04[0]": "Line 2 - Excess advance PTC repayment",
-    "f1_05[0]": "Line 3 - Total Part I (AMT + PTC, flows to 1040 line 17)"
-  },
+    "form1[0].Page1[0].f1_22[0]": "Line 11 - Additional Medicare Tax (from Form 8959)",
+    "form1[0].Page1[0].f1_23[0]": "Line 12 - NIIT (from Form 8960)",
 
-  "_PART_II_OTHER_TAXES": {
-    "f1_22[0]": "Line 11 - Additional Medicare Tax (from Form 8959 line 18)",
-    "f1_23[0]": "Line 12 - Net investment income tax (from Form 8960 line 17)",
-    "f2_24[0]": "Line 21 - Total additional taxes (flows to 1040 line 23) [PAGE 2]"
+    "form1[0].Page2[0].f2_24[0]": "Line 21 - Total additional taxes (to Form 1040 line 23)"
   }
 }

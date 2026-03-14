@@ -2,42 +2,30 @@
   "_form": "Schedule D (Form 1040) - Capital Gains and Losses",
   "_tax_year": "2025",
   "_pdf": "f1040sd.pdf",
-  "_notes": "Root prefix: topmostSubform[0].Page1[0] (page 1), topmostSubform[0].Page2[0] (page 2). Part I = Short-Term, Part II = Long-Term.",
 
-  "_HEADER": {
-    "f1_1[0]": "Name(s) shown on return",
-    "f1_2[0]": "SSN"
-  },
+  "fields": {
+    "topmostSubform[0].Page1[0].f1_1[0]": "Name(s) shown on return",
+    "topmostSubform[0].Page1[0].f1_2[0]": "SSN",
 
-  "_CHECKBOX": {
-    "c1_1[1]": "Did you dispose of any investments in an Opportunity Zone? No (/2)"
-  },
+    "topmostSubform[0].Page1[0].c1_1[1]": "Opportunity Zone: No (checkbox /2)",
 
-  "_PART_I_SHORT_TERM": {
-    "_note": "Lines 1a-6 come from Form 8949 Part I totals",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_7[0]": "Line 1b col (d) - ST proceeds (Form 8949 Box A)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_8[0]": "Line 1b col (e) - ST cost basis (Form 8949 Box A)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_9[0]": "Line 1b col (g) - ST adjustments (Form 8949 Box A)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row1b[0].f1_10[0]": "Line 1b col (h) - ST gain/loss (Form 8949 Box A)",
 
-    "Table_PartI[0].Row1b[0].f1_7[0]": "Line 1b col (d) - Proceeds (Form 8949 Box A totals)",
-    "Table_PartI[0].Row1b[0].f1_8[0]": "Line 1b col (e) - Cost basis (Form 8949 Box A)",
-    "Table_PartI[0].Row1b[0].f1_9[0]": "Line 1b col (g) - Adjustments (Form 8949 Box A)",
-    "Table_PartI[0].Row1b[0].f1_10[0]": "Line 1b col (h) - Gain/loss (Form 8949 Box A)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_11[0]": "Line 2 col (d) - ST proceeds (Form 8949 Box B)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_12[0]": "Line 2 col (e) - ST cost basis (Form 8949 Box B)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_13[0]": "Line 2 col (g) - ST adjustments (Form 8949 Box B)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].Row2[0].f1_14[0]": "Line 2 col (h) - ST gain/loss (Form 8949 Box B)",
 
-    "Table_PartI[0].Row2[0].f1_11[0]": "Line 2 col (d) - Proceeds (Form 8949 Box B totals)",
-    "Table_PartI[0].Row2[0].f1_12[0]": "Line 2 col (e) - Cost basis (Form 8949 Box B)",
-    "Table_PartI[0].Row2[0].f1_13[0]": "Line 2 col (g) - Adjustments (Form 8949 Box B)",
-    "Table_PartI[0].Row2[0].f1_14[0]": "Line 2 col (h) - Gain/loss (Form 8949 Box B)",
+    "topmostSubform[0].Page1[0].f1_22[0]": "Line 7 - Net short-term capital gain or loss",
 
-    "f1_22[0]": "Line 7 - Net short-term capital gain or loss"
-  },
+    "topmostSubform[0].Page1[0].f1_42[0]": "Line 14 - LT capital loss carryover from prior year",
+    "topmostSubform[0].Page1[0].f1_43[0]": "Line 15 - Net long-term capital gain or loss",
 
-  "_PART_II_LONG_TERM": {
-    "f1_42[0]": "Line 14 - Long-term capital loss carryover (from prior year, enter as negative in parens)",
-    "f1_43[0]": "Line 15 - Net long-term capital gain or loss"
-  },
-
-  "_PAGE_2": {
-    "_prefix": "topmostSubform[0].Page2[0]",
-    "f2_1[0]": "Line 16 - Combine lines 7 and 15 (net ST + net LT)",
-    "f2_4[0]": "Line 21 - Capital loss deduction (max -$3,000, enter in parens)",
-    "c2_3[0]": "Line 22 - Do you have a qualified dividends? (checked = use QD worksheet) (/1)"
+    "topmostSubform[0].Page2[0].f2_1[0]": "Line 16 - Combined net gain/loss (line 7 + line 15)",
+    "topmostSubform[0].Page2[0].f2_4[0]": "Line 21 - Capital loss deduction (max -$3,000)",
+    "topmostSubform[0].Page2[0].c2_3[0]": "Line 22 - Qualified dividends? (checkbox /1 = yes)"
   }
 }

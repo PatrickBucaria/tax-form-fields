@@ -2,50 +2,37 @@
   "_form": "Form 7203 - S Corporation Shareholder Stock and Debt Basis Limitations",
   "_tax_year": "2025",
   "_pdf": "f7203.pdf",
-  "_notes": "Root prefix: topmostSubform[0].Page1[0] (page 1), topmostSubform[0].Page2[0] (page 2). Required when S-Corp reports a loss, distribution, disposition, or loan repayment. Tracks stock and debt basis to determine loss allowability.",
 
-  "_HEADER": {
-    "f1_01[0]": "Shareholder name",
-    "f1_02[0]": "Shareholder SSN",
-    "f1_03[0]": "S Corporation name",
-    "f1_04[0]": "S Corporation EIN"
-  },
+  "fields": {
+    "topmostSubform[0].Page1[0].f1_01[0]": "Shareholder name",
+    "topmostSubform[0].Page1[0].f1_02[0]": "Shareholder SSN",
+    "topmostSubform[0].Page1[0].f1_03[0]": "S Corporation name",
+    "topmostSubform[0].Page1[0].f1_04[0]": "S Corporation EIN",
 
-  "_CHECKBOX": {
-    "c1_1[0]": "Check if original shareholder (acquired stock at formation) (/1)"
-  },
+    "topmostSubform[0].Page1[0].c1_1[0]": "Original shareholder (checkbox /1)",
 
-  "_PART_I_STOCK_BASIS": {
-    "f1_07[0]": "Line 1 - Stock basis at beginning of year",
+    "topmostSubform[0].Page1[0].f1_07[0]": "Line 1 - Stock basis at beginning of year",
+    "topmostSubform[0].Page1[0].f1_13[0]": "Line 3a - Ordinary dividends (K-1 box 4)",
+    "topmostSubform[0].Page1[0].f1_22[0]": "Line 8 - Total basis increases",
+    "topmostSubform[0].Page1[0].f1_23[0]": "Line 9 - Basis before distributions/losses",
+    "topmostSubform[0].Page1[0].f1_25[0]": "Line 11 - Basis after distributions",
+    "topmostSubform[0].Page1[0].f1_26[0]": "Line 12 - Excess distributions",
+    "topmostSubform[0].Page1[0].f1_29[0]": "Line 15 - Nondeductible expenses",
+    "topmostSubform[0].Page1[0].f1_30[0]": "Line 16 - Basis before losses",
+    "topmostSubform[0].Page1[0].f1_31[0]": "Line 17 - Total loss items",
+    "topmostSubform[0].Page1[0].f1_32[0]": "Line 18 - Suspended loss",
+    "topmostSubform[0].Page1[0].f1_34[0]": "Line 20 - Allowable loss",
+    "topmostSubform[0].Page1[0].f1_35[0]": "Line 21 - Stock basis at end of year",
 
-    "f1_13[0]": "Line 3a - Ordinary dividends (K-1 box 4)",
+    "topmostSubform[0].Page2[0].Table_Part3[0].Line35[0].f2_57[0]": "Part III Line 35a - Ordinary loss (K-1 box 1)",
+    "topmostSubform[0].Page2[0].Table_Part3[0].Line35[0].f2_58[0]": "Part III Line 35b - Allowed from stock basis",
+    "topmostSubform[0].Page2[0].Table_Part3[0].Line35[0].f2_59[0]": "Part III Line 35c - Allowed from debt basis",
+    "topmostSubform[0].Page2[0].Table_Part3[0].Line35[0].f2_61[0]": "Part III Line 35e - Suspended loss",
 
-    "f1_22[0]": "Line 8 - Total increases to basis (sum of lines 3-7)",
-    "f1_23[0]": "Line 9 - Add lines 1 and 8 (basis before distributions/losses)",
-
-    "f1_25[0]": "Line 11 - Basis after distributions (line 9 - line 10)",
-    "f1_26[0]": "Line 12 - Distributions in excess of stock basis",
-
-    "f1_29[0]": "Line 15 - Nondeductible expenses",
-    "f1_30[0]": "Line 16 - Stock basis before loss/deduction items",
-    "f1_31[0]": "Line 17 - Total pro rata share of loss/deduction items",
-    "f1_32[0]": "Line 18 - Loss in excess of basis (suspended, carries forward)",
-
-    "f1_34[0]": "Line 20 - Allowable loss (lesser of line 17 or line 16)",
-    "f1_35[0]": "Line 21 - Stock basis at end of year (line 16 - line 20)"
-  },
-
-  "_PART_III_ALLOWED_LOSS": {
-    "_prefix": "topmostSubform[0].Page2[0]",
-    "Table_Part3[0].Line35[0].f2_57[0]": "Line 35a - Ordinary business income/loss (K-1 box 1)",
-    "Table_Part3[0].Line35[0].f2_58[0]": "Line 35b - Allowed from stock basis",
-    "Table_Part3[0].Line35[0].f2_59[0]": "Line 35c - Allowed from debt basis",
-    "Table_Part3[0].Line35[0].f2_61[0]": "Line 35e - Suspended loss",
-
-    "Table_Part3[0].Line47[0].f2_118[0]": "Line 47a - Total losses reported on K-1",
-    "Table_Part3[0].Line47[0].f2_119[0]": "Line 47b - Total allowed from stock basis",
-    "Table_Part3[0].Line47[0].f2_120[0]": "Line 47c - Total allowed from debt basis",
-    "Table_Part3[0].Line47[0].f2_121[0]": "Line 47d - Total allowed loss",
-    "Table_Part3[0].Line47[0].f2_122[0]": "Line 47e - Total suspended loss"
+    "topmostSubform[0].Page2[0].Table_Part3[0].Line47[0].f2_118[0]": "Part III Line 47a - Total K-1 losses",
+    "topmostSubform[0].Page2[0].Table_Part3[0].Line47[0].f2_119[0]": "Part III Line 47b - Total from stock basis",
+    "topmostSubform[0].Page2[0].Table_Part3[0].Line47[0].f2_120[0]": "Part III Line 47c - Total from debt basis",
+    "topmostSubform[0].Page2[0].Table_Part3[0].Line47[0].f2_121[0]": "Part III Line 47d - Total allowed loss",
+    "topmostSubform[0].Page2[0].Table_Part3[0].Line47[0].f2_122[0]": "Part III Line 47e - Total suspended loss"
   }
 }

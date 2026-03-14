@@ -2,69 +2,45 @@
   "_form": "Form 8949 - Sales and Other Dispositions of Capital Assets",
   "_tax_year": "2025",
   "_pdf": "f8949.pdf",
-  "_notes": "Page 1 = Part I (Short-Term). Page 2 = Part II (Long-Term). Same field structure on both pages but prefixed f1_ (page 1) and f2_ (page 2). Transaction rows repeat every 8 field numbers. Root prefix: topmostSubform[0].Page1[0] or Page2[0].",
+  "_notes": "Page 1 = Part I (Short-Term), Page 2 = Part II (Long-Term). Rows repeat every 8 fields. Adjustment codes: B=basis incorrect, W=wash sale.",
 
-  "_HEADER": {
-    "f1_01[0]": "Name(s) shown on return",
-    "f1_02[0]": "SSN"
-  },
+  "fields": {
+    "topmostSubform[0].Page1[0].f1_01[0]": "Name(s) shown on return",
+    "topmostSubform[0].Page1[0].f1_02[0]": "SSN",
 
-  "_BOX_TYPE_CHECKBOXES_PAGE1": {
-    "c1_1[0]": "Box A - Short-term, basis reported to IRS (/1)",
-    "c1_1[1]": "Box B - Short-term, basis NOT reported to IRS (/2)",
-    "c1_1[2]": "Box C - Short-term, Form 1099-B not received (/3)"
-  },
+    "topmostSubform[0].Page1[0].c1_1[0]": "Box A - ST basis reported to IRS (checkbox /1)",
+    "topmostSubform[0].Page1[0].c1_1[1]": "Box B - ST basis NOT reported to IRS (checkbox /2)",
 
-  "_BOX_TYPE_CHECKBOXES_PAGE2": {
-    "c2_1[0]": "Box D - Long-term, basis reported to IRS (/1)",
-    "c2_1[1]": "Box E - Long-term, basis NOT reported to IRS (/2)",
-    "c2_1[2]": "Box F - Long-term, Form 1099-B not received (/3)"
-  },
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row1[0].f1_03[0]": "Row 1 col (a) - Description of property",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row1[0].f1_04[0]": "Row 1 col (b) - Date acquired",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row1[0].f1_05[0]": "Row 1 col (c) - Date sold",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row1[0].f1_06[0]": "Row 1 col (d) - Proceeds",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row1[0].f1_07[0]": "Row 1 col (e) - Cost basis",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row1[0].f1_08[0]": "Row 1 col (f) - Adjustment code",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row1[0].f1_09[0]": "Row 1 col (g) - Adjustment amount",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row1[0].f1_10[0]": "Row 1 col (h) - Gain or loss",
 
-  "_TRANSACTION_ROWS_PAGE1": {
-    "_prefix": "Table_Line1_Part1[0]",
-    "_pattern": "Each row has 8 columns. Row fields use RowN[0].f1_XX[0] where XX increments by 8 per row.",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row2[0].f1_11[0]": "Row 2 col (a) - Description",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row2[0].f1_12[0]": "Row 2 col (b) - Date acquired",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row2[0].f1_13[0]": "Row 2 col (c) - Date sold",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row2[0].f1_14[0]": "Row 2 col (d) - Proceeds",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row2[0].f1_15[0]": "Row 2 col (e) - Cost basis",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row2[0].f1_16[0]": "Row 2 col (f) - Adjustment code",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row2[0].f1_17[0]": "Row 2 col (g) - Adjustment amount",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row2[0].f1_18[0]": "Row 2 col (h) - Gain or loss",
 
-    "Row1[0].f1_03[0]": "Row 1 col (a) - Description of property",
-    "Row1[0].f1_04[0]": "Row 1 col (b) - Date acquired (MM/DD/YYYY)",
-    "Row1[0].f1_05[0]": "Row 1 col (c) - Date sold or disposed (MM/DD/YYYY)",
-    "Row1[0].f1_06[0]": "Row 1 col (d) - Proceeds (sales price)",
-    "Row1[0].f1_07[0]": "Row 1 col (e) - Cost or other basis",
-    "Row1[0].f1_08[0]": "Row 1 col (f) - Adjustment code (B=basis adj, W=wash sale)",
-    "Row1[0].f1_09[0]": "Row 1 col (g) - Adjustment amount",
-    "Row1[0].f1_10[0]": "Row 1 col (h) - Gain or loss (d + g - e)",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row3[0].f1_19[0]": "Row 3 col (a) - Description",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row3[0].f1_20[0]": "Row 3 col (b) - Date acquired",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row3[0].f1_21[0]": "Row 3 col (c) - Date sold",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row3[0].f1_22[0]": "Row 3 col (d) - Proceeds",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row3[0].f1_23[0]": "Row 3 col (e) - Cost basis",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row3[0].f1_24[0]": "Row 3 col (f) - Adjustment code",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row3[0].f1_25[0]": "Row 3 col (g) - Adjustment amount",
+    "topmostSubform[0].Page1[0].Table_Line1_Part1[0].Row3[0].f1_26[0]": "Row 3 col (h) - Gain or loss",
 
-    "Row2[0].f1_11[0]": "Row 2 col (a)",
-    "Row2[0].f1_12[0]": "Row 2 col (b)",
-    "Row2[0].f1_13[0]": "Row 2 col (c)",
-    "Row2[0].f1_14[0]": "Row 2 col (d)",
-    "Row2[0].f1_15[0]": "Row 2 col (e)",
-    "Row2[0].f1_16[0]": "Row 2 col (f)",
-    "Row2[0].f1_17[0]": "Row 2 col (g)",
-    "Row2[0].f1_18[0]": "Row 2 col (h)",
-
-    "Row3[0].f1_19[0]": "Row 3 col (a)",
-    "Row3[0].f1_20[0]": "Row 3 col (b)",
-    "Row3[0].f1_21[0]": "Row 3 col (c)",
-    "Row3[0].f1_22[0]": "Row 3 col (d)",
-    "Row3[0].f1_23[0]": "Row 3 col (e)",
-    "Row3[0].f1_24[0]": "Row 3 col (f)",
-    "Row3[0].f1_25[0]": "Row 3 col (g)",
-    "Row3[0].f1_26[0]": "Row 3 col (h)",
-
-    "_row_pattern": "Row N uses fields f1_((N-1)*8 + 3) through f1_((N-1)*8 + 10). Max 14 rows."
-  },
-
-  "_TOTALS_PAGE1": {
-    "f1_91[0]": "Totals col (d) - Total proceeds",
-    "f1_92[0]": "Totals col (e) - Total cost basis",
-    "f1_94[0]": "Totals col (g) - Total adjustments",
-    "f1_95[0]": "Totals col (h) - Total gain or loss"
-  },
-
-  "_COMMON_ADJUSTMENT_CODES": {
-    "B": "Basis reported to IRS is incorrect (e.g., ESPP disqualifying disposition where W-2 income not reflected in 1099-B basis)",
-    "W": "Wash sale - loss disallowed (add positive amount to increase basis)",
-    "T": "Short-term trade reported on 1099-B but actually long-term"
+    "topmostSubform[0].Page1[0].f1_91[0]": "Totals col (d) - Total proceeds",
+    "topmostSubform[0].Page1[0].f1_92[0]": "Totals col (e) - Total cost basis",
+    "topmostSubform[0].Page1[0].f1_94[0]": "Totals col (g) - Total adjustments",
+    "topmostSubform[0].Page1[0].f1_95[0]": "Totals col (h) - Total gain or loss"
   }
 }
