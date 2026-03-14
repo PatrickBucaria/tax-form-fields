@@ -21,6 +21,8 @@ Figuring out the field names manually requires dumping PDF metadata, writing tes
 
 The mappings handle step 3. Your agent handles the rest.
 
+For a full walkthrough of using this approach to prepare a real tax return, see **[GUIDE.md](GUIDE.md)**.
+
 ## Directory Structure
 
 ```
