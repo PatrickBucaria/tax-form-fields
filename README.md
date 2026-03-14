@@ -120,12 +120,15 @@ Each JSON file maps full PDF field names to human-readable descriptions. The `fi
 
 - **Duplicate field paths.** Form 1040 has duplicate fields in parallel containers (e.g., filing status checkboxes exist in both `Page1[0]` and `Checkbox_ReadOrder[0]`). The mappings include only the canonical path — writing to it updates both.
 
-## verify_mappings.py
+## Verification
 
-Downloads blank PDFs from irs.gov and runs end-to-end verification on every mapped field:
+Every mapping goes through two layers of verification:
 
-1. Checks every field name in the mapping exists in the PDF
-2. For text fields: writes a test value, saves the PDF, re-reads it, and confirms the value round-trips correctly
+### 1. Automated round-trip tests (`verify_mappings.py`)
+
+Downloads blank PDFs from irs.gov, then for every mapped field:
+- Confirms the field name exists in the PDF
+- For text fields: writes a test value, saves the PDF, re-reads it, and verifies the value round-trips correctly
 
 ```bash
 python3 verify_mappings.py              # verify all 15 forms
@@ -135,9 +138,14 @@ python3 verify_mappings.py --download   # download PDFs without verifying
 
 PDFs are included in `forms/` (2025 blank forms from irs.gov).
 
-## visual_verify.py
+### 2. Visual verification with Claude (`visual_verify.py`)
 
-Fills every mapped field with a short label (e.g., `L1a Wages`) and converts the PDF to PNG images for visual inspection. Useful when adding new forms or debugging field positions.
+Every field in every form was visually verified using Claude Opus 4. The process: fill all fields with labeled test values (e.g., `L1a Wages`), convert to PNG, and have Claude read the image to confirm each label appears on the correct line. This catches mapping errors that round-trip tests can't — like a field that writes successfully but maps to the wrong line on the form.
+
+```bash
+python3 visual_verify.py f1040sb       # generate labeled PNGs for Schedule B
+python3 visual_verify.py               # list available forms
+```
 
 ```bash
 python3 visual_verify.py f1040sb       # generate labeled PNGs for Schedule B
