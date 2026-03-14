@@ -1,6 +1,6 @@
 # tax-form-fields
 
-Machine-readable mappings from tax form PDF field names to human-readable line numbers. 1,590 fields across 16 forms (15 federal + NY IT-203), with 100% coverage of every fillable field. Organized by tax year and jurisdiction for easy extension.
+Machine-readable mappings from tax form PDF field names to human-readable line numbers. 1,864 fields across 18 forms (15 federal + 3 NY), with 100% coverage of every fillable field. Organized by tax year and jurisdiction for easy extension.
 
 **Built for AI agents that prepare tax returns.** Give an LLM these mappings and it can go from reading your W-2s and 1099s to producing filled tax PDFs — no manual data entry, no $200 tax software.
 
@@ -112,9 +112,9 @@ Or use the included `fill_pdf.py` to skip the boilerplate — see [fill_pdf.py](
 
 | File | Form | Fields |
 |------|------|-------:|
+| `it201.json` | IT-201 - Resident Income Tax Return | 214 |
 | `it203.json` | IT-203 - Nonresident and Part-Year Resident Income Tax Return | 225 |
-
-NY IT-201 (resident) and IT-196 (itemized deduction) PDFs are included in `2025/ny/forms/` but not yet mapped — PRs welcome.
+| `it196.json` | IT-196 - Itemized Deductions | 60 |
 
 ### Not Included
 
@@ -232,7 +232,7 @@ To contribute:
 3. Include the blank PDF in `{year}/{jurisdiction}/forms/` and the mapping in `{year}/{jurisdiction}/mappings/`
 4. Open a PR — CI will verify all mappings before merge
 
-**Especially wanted:** NY IT-201, IT-196, and forms from other states with fillable PDFs.
+**Especially wanted:** Forms from other states with fillable PDFs.
 
 ## Disclaimer
 
