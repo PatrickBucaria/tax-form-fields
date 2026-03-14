@@ -2,13 +2,24 @@
 
 Machine-readable mappings from IRS PDF field names to human-readable line numbers. 1,365 fields across 15 federal forms, with 100% coverage of every fillable field. Includes tools to fill and verify them programmatically.
 
+**Built for AI agents that prepare tax returns.** Give an LLM these mappings and it can go from reading your W-2s and 1099s to producing filled IRS PDFs — no manual data entry, no $200 tax software.
+
 > **Tax year 2025.** The IRS changes PDF field names between years. These mappings are verified against the 2025 blank forms. For other years, download the new PDFs and run `verify_mappings.py` to see what broke.
 
 ## The Problem
 
-IRS fillable PDFs use opaque field names like `topmostSubform[0].Page1[0].f1_47[0]` instead of `line_1a_wages`. There's no official mapping. Figuring out which field is which requires dumping metadata, writing test values, and visually inspecting the output — tedious work that takes hours per form.
+IRS fillable PDFs use opaque field names like `topmostSubform[0].Page1[0].f1_47[0]` instead of `line_1a_wages`. There's no official mapping. If you ask an AI agent to fill out your tax forms, it has no way to know which PDF field corresponds to which line — unless you give it these mappings.
 
-This repo provides pre-verified mappings for 15 common federal forms so you can fill IRS PDFs from code without reverse-engineering the field names yourself.
+Figuring out the field names manually requires dumping PDF metadata, writing test values, and visually inspecting the output — tedious work that takes hours per form. This repo does that work once so every agent can reuse it.
+
+### How an AI agent uses this
+
+1. Read your tax documents (W-2s, 1099s, K-1s, etc.)
+2. Compute the value for each form line using IRS instructions
+3. Look up the PDF field name from the mapping (e.g., "Line 1a wages" → `topmostSubform[0].Page1[0].f1_47[0]`)
+4. Write all values into the PDF with pypdf
+
+The mappings handle step 3. Your agent handles the rest.
 
 ## Setup
 
