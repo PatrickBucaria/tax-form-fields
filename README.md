@@ -1,6 +1,6 @@
 # tax-form-fields
 
-Machine-readable mappings from tax form PDF field names to human-readable line numbers. 1,864 fields across 18 forms (15 federal + 3 NY), with 100% coverage of every fillable field. Organized by tax year and jurisdiction for easy extension.
+Machine-readable mappings from tax form PDF field names to human-readable line numbers. 1,975 fields across 19 forms (16 federal + 3 NY), with 100% coverage of every fillable field. Organized by tax year and jurisdiction for easy extension.
 
 **Built for AI agents that prepare tax returns.** Give an LLM these mappings and it can go from reading your W-2s and 1099s to producing filled tax PDFs — no manual data entry, no $200 tax software.
 
@@ -109,6 +109,7 @@ Or use the included `fill_pdf.py` to skip the boilerplate — see [fill_pdf.py](
 | `f8959.json` | Form 8959 - Additional Medicare Tax | 26 |
 | `f8960.json` | Form 8960 - Net Investment Income Tax | 38 |
 | `f7203.json` | Form 7203 - S Corp Shareholder Basis | 188 |
+| `f8995a.json` | Form 8995-A - Qualified Business Income Deduction | 111 |
 
 ### 2025 New York
 

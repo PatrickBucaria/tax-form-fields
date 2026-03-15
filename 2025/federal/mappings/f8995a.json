@@ -1,0 +1,148 @@
+{
+  "_form": "Form 8995-A - Qualified Business Income Deduction",
+  "_tax_year": "2025",
+  "_pdf": "f8995a.pdf",
+
+  "fields": {
+    "topmostSubform[0].Page1[0].f1_01[0]": "Name(s) shown on return",
+    "topmostSubform[0].Page1[0].f1_02[0]": "Your taxpayer identification number",
+
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowA[0].f1_03[0]": "Part I Line 1A(a) - Trade, business, or aggregation name (Row A)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowA[0].c1_1[0]": "Part I Line 1A(b) - Check if specified service (Row A) (checkbox /1)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowA[0].c1_2[0]": "Part I Line 1A(c) - Check if aggregation (Row A) (checkbox /1)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowA[0].f1_04[0]": "Part I Line 1A(d) - Taxpayer identification number (Row A)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowA[0].c1_3[0]": "Part I Line 1A(e) - Check if patron (Row A) (checkbox /1)",
+
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowB[0].f1_05[0]": "Part I Line 1B(a) - Trade, business, or aggregation name (Row B)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowB[0].c1_4[0]": "Part I Line 1B(b) - Check if specified service (Row B) (checkbox /1)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowB[0].c1_5[0]": "Part I Line 1B(c) - Check if aggregation (Row B) (checkbox /1)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowB[0].f1_06[0]": "Part I Line 1B(d) - Taxpayer identification number (Row B)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowB[0].c1_6[0]": "Part I Line 1B(e) - Check if patron (Row B) (checkbox /1)",
+
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowC[0].f1_07[0]": "Part I Line 1C(a) - Trade, business, or aggregation name (Row C)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowC[0].c1_7[0]": "Part I Line 1C(b) - Check if specified service (Row C) (checkbox /1)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowC[0].c1_8[0]": "Part I Line 1C(c) - Check if aggregation (Row C) (checkbox /1)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowC[0].f1_08[0]": "Part I Line 1C(d) - Taxpayer identification number (Row C)",
+    "topmostSubform[0].Page1[0].Table_PartI[0].RowC[0].c1_9[0]": "Part I Line 1C(e) - Check if patron (Row C) (checkbox /1)",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row2[0].f1_09[0]": "Part II Line 2 - Qualified business income or (loss), Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row2[0].f1_10[0]": "Part II Line 2 - Qualified business income or (loss), Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row2[0].f1_11[0]": "Part II Line 2 - Qualified business income or (loss), Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row3[0].f1_12[0]": "Part II Line 3 - Multiply line 2 by 20%, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row3[0].f1_13[0]": "Part II Line 3 - Multiply line 2 by 20%, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row3[0].f1_14[0]": "Part II Line 3 - Multiply line 2 by 20%, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row4[0].f1_15[0]": "Part II Line 4 - Allocable share of W-2 wages, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row4[0].f1_16[0]": "Part II Line 4 - Allocable share of W-2 wages, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row4[0].f1_17[0]": "Part II Line 4 - Allocable share of W-2 wages, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row5[0].f1_18[0]": "Part II Line 5 - Multiply line 4 by 50%, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row5[0].f1_19[0]": "Part II Line 5 - Multiply line 4 by 50%, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row5[0].f1_20[0]": "Part II Line 5 - Multiply line 4 by 50%, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row6[0].f1_21[0]": "Part II Line 6 - Multiply line 4 by 25%, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row6[0].f1_22[0]": "Part II Line 6 - Multiply line 4 by 25%, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row6[0].f1_23[0]": "Part II Line 6 - Multiply line 4 by 25%, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row7[0].f1_24[0]": "Part II Line 7 - UBIA of all qualified property, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row7[0].f1_25[0]": "Part II Line 7 - UBIA of all qualified property, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row7[0].f1_26[0]": "Part II Line 7 - UBIA of all qualified property, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8[0].f1_27[0]": "Part II Line 8 - Multiply line 7 by 2.5%, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8[0].f1_28[0]": "Part II Line 8 - Multiply line 7 by 2.5%, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row8[0].f1_29[0]": "Part II Line 8 - Multiply line 7 by 2.5%, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row9[0].f1_30[0]": "Part II Line 9 - Add lines 6 and 8, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row9[0].f1_31[0]": "Part II Line 9 - Add lines 6 and 8, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row9[0].f1_32[0]": "Part II Line 9 - Add lines 6 and 8, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row10[0].f1_33[0]": "Part II Line 10 - Greater of line 5 or line 9, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row10[0].f1_34[0]": "Part II Line 10 - Greater of line 5 or line 9, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row10[0].f1_35[0]": "Part II Line 10 - Greater of line 5 or line 9, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row11[0].f1_36[0]": "Part II Line 11 - W-2/UBIA limitation (smaller of line 3 or 10), Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row11[0].f1_37[0]": "Part II Line 11 - W-2/UBIA limitation (smaller of line 3 or 10), Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row11[0].f1_38[0]": "Part II Line 11 - W-2/UBIA limitation (smaller of line 3 or 10), Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row12[0].f1_39[0]": "Part II Line 12 - Phased-in reduction from line 26, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row12[0].f1_40[0]": "Part II Line 12 - Phased-in reduction from line 26, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row12[0].f1_41[0]": "Part II Line 12 - Phased-in reduction from line 26, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row13[0].f1_42[0]": "Part II Line 13 - QBI deduction before patron (greater of line 11 or 12), Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row13[0].f1_43[0]": "Part II Line 13 - QBI deduction before patron (greater of line 11 or 12), Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row13[0].f1_44[0]": "Part II Line 13 - QBI deduction before patron (greater of line 11 or 12), Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row14[0].f1_45[0]": "Part II Line 14 - Patron reduction from Schedule D, Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row14[0].f1_46[0]": "Part II Line 14 - Patron reduction from Schedule D, Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row14[0].f1_47[0]": "Part II Line 14 - Patron reduction from Schedule D, Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row15[0].f1_48[0]": "Part II Line 15 - QBI component (line 13 minus line 14), Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row15[0].f1_49[0]": "Part II Line 15 - QBI component (line 13 minus line 14), Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row15[0].f1_50[0]": "Part II Line 15 - QBI component (line 13 minus line 14), Column C",
+
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row16[0].f1_51[0]": "Part II Line 16 - Total QBI component (sum of line 15), Column A",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row16[0].f1_52[0]": "Part II Line 16 - Total QBI component (sum of line 15), Column B",
+    "topmostSubform[0].Page1[0].Table_PartII[0].Row16[0].f1_53[0]": "Part II Line 16 - Total QBI component (sum of line 15), Column C",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row17[0].f2_01[0]": "Part III Line 17 - Enter amounts from line 3, Column A",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row17[0].f2_02[0]": "Part III Line 17 - Enter amounts from line 3, Column B",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row17[0].f2_03[0]": "Part III Line 17 - Enter amounts from line 3, Column C",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row18[0].f2_04[0]": "Part III Line 18 - Enter amounts from line 10, Column A",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row18[0].f2_05[0]": "Part III Line 18 - Enter amounts from line 10, Column B",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row18[0].f2_06[0]": "Part III Line 18 - Enter amounts from line 10, Column C",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row19[0].f2_07[0]": "Part III Line 19 - Subtract line 18 from line 17, Column A",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row19[0].f2_08[0]": "Part III Line 19 - Subtract line 18 from line 17, Column B",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row19[0].f2_09[0]": "Part III Line 19 - Subtract line 18 from line 17, Column C",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row20[0].Ln20[0].f2_10[0]": "Part III Line 20 - Taxable income before QBI deduction",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row20[0].f2_11_RO[0]": "Part III Line 20 - Column A (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row20[0].f2_12_RO[0]": "Part III Line 20 - Column B (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row20[0].f2_13_RO[0]": "Part III Line 20 - Column C (read-only, auto-calculated)",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row21[0].Ln21[0].f2_14[0]": "Part III Line 21 - Threshold ($197,300 or $394,600 MFJ)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row21[0].f2_15_RO[0]": "Part III Line 21 - Column A (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row21[0].f2_16_RO[0]": "Part III Line 21 - Column B (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row21[0].f2_17_RO[0]": "Part III Line 21 - Column C (read-only, auto-calculated)",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row22[0].Ln22[0].f2_18[0]": "Part III Line 22 - Subtract line 21 from line 20",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row22[0].f2_19_RO[0]": "Part III Line 22 - Column A (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row22[0].f2_20_RO[0]": "Part III Line 22 - Column B (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row22[0].f2_21_RO[0]": "Part III Line 22 - Column C (read-only, auto-calculated)",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row23[0].Ln23[0].f2_22[0]": "Part III Line 23 - Phase-in range ($50,000 or $100,000 MFJ)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row23[0].f2_23_RO[0]": "Part III Line 23 - Column A (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row23[0].f2_24_RO[0]": "Part III Line 23 - Column B (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row23[0].f2_25_RO[0]": "Part III Line 23 - Column C (read-only, auto-calculated)",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row24[0].Ln24[0].f2_26[0]": "Part III Line 24 - Phase-in percentage (line 22 / line 23)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row24[0].f2_27_RO[0]": "Part III Line 24 - Column A (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row24[0].f2_28_RO[0]": "Part III Line 24 - Column B (read-only, auto-calculated)",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row24[0].f2_29_RO[0]": "Part III Line 24 - Column C (read-only, auto-calculated)",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row25[0].f2_30[0]": "Part III Line 25 - Total phase-in reduction (line 19 x line 24), Column A",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row25[0].f2_31[0]": "Part III Line 25 - Total phase-in reduction (line 19 x line 24), Column B",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row25[0].f2_32[0]": "Part III Line 25 - Total phase-in reduction (line 19 x line 24), Column C",
+
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row26[0].f2_33[0]": "Part III Line 26 - QBI after phase-in (line 17 minus line 25, to line 12), Column A",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row26[0].f2_34[0]": "Part III Line 26 - QBI after phase-in (line 17 minus line 25, to line 12), Column B",
+    "topmostSubform[0].Page2[0].Table_PartIII[0].Row26[0].f2_35[0]": "Part III Line 26 - QBI after phase-in (line 17 minus line 25, to line 12), Column C",
+
+    "topmostSubform[0].Page2[0].f2_36[0]": "Part IV Line 27 - Total QBI component from line 16",
+    "topmostSubform[0].Page2[0].f2_37[0]": "Part IV Line 28 - Qualified REIT dividends and PTP income or (loss)",
+    "topmostSubform[0].Page2[0].f2_38[0]": "Part IV Line 29 - REIT/PTP loss carryforward from prior years",
+    "topmostSubform[0].Page2[0].f2_39[0]": "Part IV Line 30 - Total REIT/PTP income (lines 28+29, min 0)",
+    "topmostSubform[0].Page2[0].f2_40[0]": "Part IV Line 31 - REIT/PTP component (line 30 x 20%)",
+    "topmostSubform[0].Page2[0].f2_41[0]": "Part IV Line 32 - QBI deduction before income limitation (lines 27+31)",
+    "topmostSubform[0].Page2[0].f2_42[0]": "Part IV Line 33 - Taxable income before QBI deduction",
+    "topmostSubform[0].Page2[0].f2_43[0]": "Part IV Line 34 - Net capital gain plus qualified dividends",
+    "topmostSubform[0].Page2[0].f2_44[0]": "Part IV Line 35 - Subtract line 34 from line 33 (min 0)",
+    "topmostSubform[0].Page2[0].f2_45[0]": "Part IV Line 36 - Income limitation (line 35 x 20%)",
+    "topmostSubform[0].Page2[0].f2_46[0]": "Part IV Line 37 - QBI deduction before DPAD (smaller of line 32 or 36)",
+    "topmostSubform[0].Page2[0].f2_47[0]": "Part IV Line 38 - DPAD under section 199A(g)",
+    "topmostSubform[0].Page2[0].f2_48[0]": "Part IV Line 39 - Total QBI deduction (lines 37+38, to Form 1040 line 13)",
+    "topmostSubform[0].Page2[0].f2_49[0]": "Part IV Line 40 - Total REIT/PTP loss carryforward"
+  }
+}
