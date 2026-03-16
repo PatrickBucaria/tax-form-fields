@@ -109,6 +109,53 @@ The filled PDFs this workflow produces are print-ready. You're not saving time o
 
 **Checkbox values are tricky.** Different IRS PDFs use different values for checkboxes (`/1`, `/Yes`, `/No`). The tax-form-fields mappings document the correct value for each checkbox, but if you're mapping a new form, you need to check the PDF's appearance states.
 
+## 2025 Form Instructions
+
+Download the official instructions for each form covered by this repo. These are essential for the audit agent to verify computations, check line-by-line rules, and confirm eligibility for deductions and credits.
+
+### Federal (IRS)
+
+| Form | Instructions PDF |
+|------|-----------------|
+| Form 1040 | [General Instructions](https://www.irs.gov/pub/irs-pdf/i1040gi.pdf) |
+| Schedule 1 | [Instructions for Schedule 1](https://www.irs.gov/pub/irs-pdf/i1040s1.pdf) |
+| Schedule 2 | [Instructions for Schedule 2](https://www.irs.gov/pub/irs-pdf/i1040s2.pdf) |
+| Schedule A | [Instructions for Schedule A](https://www.irs.gov/pub/irs-pdf/i1040sa.pdf) |
+| Schedule B | [Instructions for Schedule B](https://www.irs.gov/pub/irs-pdf/i1040sb.pdf) |
+| Schedule C | [Instructions for Schedule C](https://www.irs.gov/pub/irs-pdf/i1040sc.pdf) |
+| Schedule D | [Instructions for Schedule D](https://www.irs.gov/pub/irs-pdf/i1040sd.pdf) |
+| Schedule E | [Instructions for Schedule E](https://www.irs.gov/pub/irs-pdf/i1040se.pdf) |
+| Schedule 8812 | [Instructions for Schedule 8812](https://www.irs.gov/pub/irs-pdf/i1040s8.pdf) |
+| Form 7203 | [Instructions for Form 7203](https://www.irs.gov/pub/irs-pdf/i7203.pdf) |
+| Form 8829 | [Instructions for Form 8829](https://www.irs.gov/pub/irs-pdf/i8829.pdf) |
+| Form 8889 | [Instructions for Form 8889](https://www.irs.gov/pub/irs-pdf/i8889.pdf) |
+| Form 8949 | [Instructions for Form 8949](https://www.irs.gov/pub/irs-pdf/i8949.pdf) |
+| Form 8959 | [Instructions for Form 8959](https://www.irs.gov/pub/irs-pdf/i8959.pdf) |
+| Form 8960 | [Instructions for Form 8960](https://www.irs.gov/pub/irs-pdf/i8960.pdf) |
+| Form 8995-A | [Instructions for Form 8995-A](https://www.irs.gov/pub/irs-pdf/i8995a.pdf) |
+
+IRS instructions follow the pattern `https://www.irs.gov/pub/irs-pdf/iXXXX.pdf`. If any link above is stale, search [irs.gov/forms-instructions](https://www.irs.gov/forms-instructions) for the current version.
+
+### New York State
+
+| Form | Instructions PDF |
+|------|-----------------|
+| IT-201 (Resident) | [Instructions for IT-201](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf) |
+| IT-203 (Nonresident/Part-Year) | [Instructions for IT-203](https://www.tax.ny.gov/pdf/current_forms/it/it203i.pdf) |
+| IT-196 (Itemized Deductions) | [Instructions for IT-196](https://www.tax.ny.gov/pdf/current_forms/it/it196i.pdf) |
+| IT-182 (Passive Activity Loss) | [Instructions for IT-182](https://www.tax.ny.gov/pdf/current_forms/it/it182i.pdf) |
+
+NY instructions follow the pattern `https://www.tax.ny.gov/pdf/current_forms/it/itXXXi.pdf`. If any link is stale, search [tax.ny.gov/forms](https://www.tax.ny.gov/forms) for the current version.
+
+### How to Use Instructions for Auditing
+
+When running the audit agent workflow (Step 5), give the agent both the filled PDF and the corresponding instructions PDF. The agent should:
+
+1. **Check every line** — verify the computation matches the instruction's rules for that line
+2. **Confirm cross-references** — instructions specify where amounts flow from other forms (e.g., "Enter the amount from Schedule D, line 21")
+3. **Validate eligibility** — instructions contain income limits, phase-outs, and filing status restrictions that affect whether a deduction or credit applies
+4. **Review worksheets** — many instructions include worksheets that must be completed before entering a value on the form (e.g., the Qualified Dividends and Capital Gain Tax Worksheet in the 1040 instructions)
+
 ## The Repo
 
 All the field mappings, tools, and verification scripts are open source:
