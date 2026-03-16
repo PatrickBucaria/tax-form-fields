@@ -1,6 +1,6 @@
 # tax-form-fields
 
-Machine-readable mappings from tax form PDF field names to human-readable line numbers. 1,975 fields across 19 forms (16 federal + 3 NY), with 100% coverage of every fillable field. Organized by tax year and jurisdiction for easy extension.
+Machine-readable mappings from tax form PDF field names to human-readable line numbers. 2,114 fields across 20 forms (16 federal + 4 NY), with 100% coverage of every fillable field. Organized by tax year and jurisdiction for easy extension.
 
 **Built for AI agents that prepare tax returns.** Give an LLM these mappings and it can go from reading your W-2s and 1099s to producing filled tax PDFs — no manual data entry, no $200 tax software.
 
@@ -118,6 +118,7 @@ Or use the included `fill_pdf.py` to skip the boilerplate — see [fill_pdf.py](
 | `it201.json` | IT-201 - Resident Income Tax Return | 214 |
 | `it203.json` | IT-203 - Nonresident and Part-Year Resident Income Tax Return | 225 |
 | `it196.json` | IT-196 - Itemized Deductions | 60 |
+| `it182.json` | IT-182 - Passive Activity Loss Limitations (Nonresidents) | 139 |
 
 ### Not Included
 

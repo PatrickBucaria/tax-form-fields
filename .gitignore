@@ -5,3 +5,4 @@ __pycache__/
 output/
 visual_verify/*.png
 visual_verify/*.pdf
+CLAUDE.md

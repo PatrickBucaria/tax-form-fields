@@ -169,6 +169,10 @@ def verify_mapping(mapping_path, forms_dir, label, jurisdiction):
     errors = []
 
     for field_name, description in fields.items():
+        # Skip metadata/comment keys (e.g., "_Part I", "_notes")
+        if field_name.startswith("_"):
+            continue
+
         # Check field exists
         if field_name not in pdf_fields:
             errors.append(f"  NOT FOUND: {field_name} ({description})")

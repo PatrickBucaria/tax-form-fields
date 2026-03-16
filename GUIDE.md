@@ -115,4 +115,4 @@ All the field mappings, tools, and verification scripts are open source:
 
 **[github.com/PatrickBucaria/tax-form-fields](https://github.com/PatrickBucaria/tax-form-fields)**
 
-1,864 fields across 18 forms (15 federal + 3 NY). MIT licensed. PRs welcome for additional forms and states.
+2,114 fields across 20 forms (16 federal + 4 NY). MIT licensed. PRs welcome for additional forms and states.

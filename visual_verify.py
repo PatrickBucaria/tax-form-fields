@@ -94,6 +94,8 @@ def fill_form_for_visual(mapping_path, forms_dir):
     filled_fields = []
 
     for field_name, desc in fields.items():
+        if field_name.startswith("_"):
+            continue
         if field_name not in pdf_fields:
             continue
 
